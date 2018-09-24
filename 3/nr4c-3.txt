@@ -1,0 +1,220 @@
+
+]  NR4C Working Group                                                  Nircek  [
+]  Nircek's Request 4 Comments: 3                           24 September 2018  [
+]  Revision: 0+                                                                [
+
+                     NR4C-editor Language Definition v.1.0                      
+
+
+Status of this Memo
+
+   This document specifies a definition of NR4C-editor language for the
+   community and requests discussions and suggestions for improvements. Please
+   refer to the current version and revision of NR4C Standard. Distribution of
+   this memo is limited.
+
+
+Copyright Notice
+
+   Copyright (c) 2018 Nircek                              ALL RIGHTS RESERVED!!!
+
+   Ten dokument został stworzony tylko i wyłącznie dla użytku prywatnego, nie
+   miał na celu nikogo urazić, ani zaprzeczyć jakiekolwiek globalnie ustalone
+   prawa, zależności itp. Nie ma także nic wspólnego z oryginalnym RFC oraz z
+   Internet Engineering Task Force. Nie należy brać tego dokumentu jako naukowo
+   potwierdzonego. Nie pozwalam na używanie tego dokumentu w żadnej innej
+   formie, ani gdziekolwiek indziej tam, gdzie nie wyraziłem zgody. Wszystkie
+   prawa zastrzeżone przeze mnie, czyli przez użytkownika internetu podającego
+   się pod pseudonimem Nircek.
+
+   This document was created only for private use, wished to offend no one and
+   not deny any globally determined laws, dependencies, etc. There is also
+   nothing to do with the original RFC and Internet Engineering Task Force. Do
+   not take this document for scientifically proven. I do not allow the use of
+   this document in any other form or anywhere else where I have not agreed.
+   All rights reserved by me, in other words, by the internet user under
+   nickname Nircek.
+
+   Zezwalam na opublikowanie tego dokumentu w repozytorium Nircek/NR4C w
+   serwisie GitHub.
+
+
+Abstract
+
+   Ten dokument definiuje język programu NR4C-editor w wersji 1. Tego typu
+   dokument jest potrzebny, żeby zgrupować oraz przedstawić w prosty i czytelny
+   wszystkie komendy oraz możliwości tego języka.
+
+Table of Contents
+
+   1.   Pierwszy interpreter ..................................................1
+   2.   Podstawowe komendy ....................................................1
+   3.   Zaznaczanie ...........................................................1
+   4.   Nagłówek i stopka .....................................................1
+   5.   Wyrównanie ............................................................1
+   6.   Segmenty tekstu .......................................................2
+   7.   Wcięcia ...............................................................2
+     1    czyste ..............................................................2
+     2    punktory ............................................................2
+
+1 Pierwszy interpreter
+
+   Pierwszy interpreter bazuje na pierwszym znaku w linii pilku wejściowego.
+   Jeżeli jest to / to jest wtedy uruchamiany tryb komend, czyli normalnie są
+   interpretowane wszystkie komendy wraz z ich argumentami. Jeżeli jest to # to
+   uruchamiany jest tryb komentarza. Jeżeli natomiast nie jest to żaden z
+   powyższych znaków to uruchamiany jest tryb surowy, który nie zwraca na nic
+   uwagę i po prostu przepisuje całą linię z pliku wejściowego do wyjściowego.
+
+2 Podstawowe komendy
+
+   a) " - umożliwia wprowadzenie tekstu.
+      Jeżeli tekst będzie zajmował więcej miejsca niż jest dostępne na stronie
+      to zostanie złamany. Ponadto musimy uciekać niektóre znaki:
+       - %, bo normalnie jest on używany do zmiennych,
+       - |, bo normalnie jest on używany do pamiętanych wcięć,
+       - \\, bo normalnie jest on używany do inteligentnych tabulatorów.
+   b) % - definiowanie komend, pierwszy argument (jeden znak) to nazwa
+      zmiennej, a drugi argument to wartość danej zmiennej, np "%23".
+      Jeżeli potrzebujemy więcej niż jednego znaku możemy użyć zagnieżdżonej
+      komendy ", np. "%g"NR4C Working Group".
+      Zarezerwowanymi nazwami zmiennych są:
+       - p (numer aktualnie przetwarzanej strony),
+       - d (krótka data, np "2018-09-24"),
+       - D (długa data, np "24 September 2018"),
+       - l (złamanie linii),
+       - nl (zapobieganie wypisywanie nowej linii, np. podczas wypisywania
+         tytułu sekcji).
+      Jeżeli chcemy użyć danej zmiennej w tekście to musimy ją umieścić w
+      argumencie komendy " przez podanie % oraz nazwy zmiennej.
+   c) o - wypisanie ToC (spisu treści).
+
+3 Zaznaczanie
+
+   Żeby "zaznaczyć" tzn poddać danemu trybowi/efektowi większy fragment, który
+   składa się więcej niż z jednej linii możemy użyć komendy :, a żeby zakończyć
+   zaznaczenie komendy .
+
+4 Nagłówek i stopka
+
+   Komendy h oraz f włączają tryb nagłówka lub stopki, np.:
+
+      /h:
+      /c"nagłówek
+      /.e
+
+
+
+]                                                                              [
+]                                                                              [
+]  Nircek                      NR4C Working Group                    [Page 1]  [
+]  NR4C-3rev0+               NR4C-editor definition                2018-09-24  [
+]                                                                              [
+]                                                                              [
+5 Wyrównanie
+
+   Żeby skorzystać z wyrównań należy użyć tzw formatowanej linii, którą trzeba
+   zakończyć komendą ., która wypisuje aktualną formatowaną linię oraz czyści
+   tę w pamięci.
+   Żeby wpisać tekst w odpowiednio wyrównanym miejscu należy użyć poniższych
+   komend:
+   a) l - wyrównanie do lewej
+   b) r - wyrównanie do prawej
+   c) c - wyrównanie do środka
+
+6 Segmenty tekstu
+
+   Żeby podzielić tekst na części możemy użyć 4 typów znaczników:
+   a) s - znacznik rozdziału,
+   b) u - znacznik podrozdziału,
+   c) t - znacznik tytułu (tak jak s tylko bez numerowania),
+   d) k - znacznik tematu (tak jak t tylko bez wpisu w ToC).
+   Tytuły sekcji są "przyklejone" do nastepnej komendy " w celu niezostawiania
+   ich na innej stronie niż sama sekcja.
+
+7 Wcięcia
+
+7.1 czyste
+
+   a) p - wprowadza paragraf,
+   b) / - tabulator pamiętany (należy wcześniej użyć w argumencie komendy "
+      znaku |, żeby zapamiętać odległość dla tego znaku, a następnie, żeby
+      mógł zostać użyty z pomocą tej komendy),
+   c) \\ - inteligentny tabulator w danym tekście jeżeli potrzebujemy stworzyć
+      tabelę, możemy użyć znaku \\ jako argument komendy " i znaleźć optymalne
+      wcięcie dla wszystkich komórek tabeli, a po całej tabeli użyć komendy \\.
+
+7.2 punktory
+
+   a) - - wprowadza punktowanie od myślników,
+   b) a - wprowadza punktowanie kolejnymi literami alfabetu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]                                                                              [
+]                                                                              [
+]  Nircek                      NR4C Working Group                    [Page 2]  [
