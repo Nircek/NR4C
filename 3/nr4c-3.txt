@@ -1,6 +1,5 @@
-
 ]  NR4C Working Group                                                  Nircek  [
-]  Nircek's Request 4 Comments: 3                           24 September 2018  [
+]  Nircek's Request 4 Comments: 3                           25 September 2018  [
 ]  Revision: 0+                                                                [
 
                      NR4C-editor Language Definition v.1.0                      
@@ -27,13 +26,13 @@ Copyright Notice
    prawa zastrzeżone przeze mnie, czyli przez użytkownika internetu podającego
    się pod pseudonimem Nircek.
 
-   This document was created only for private use, wished to offend no one and
-   not deny any globally determined laws, dependencies, etc. There is also
-   nothing to do with the original RFC and Internet Engineering Task Force. Do
-   not take this document for scientifically proven. I do not allow the use of
-   this document in any other form or anywhere else where I have not agreed.
-   All rights reserved by me, in other words, by the internet user under
-   nickname Nircek.
+   This document was created only for private use. The purpose of this document
+   is not to offend anyone or deny any globally determined laws, dependencies,
+   etc. There is also nothing to do with the original RFC and Internet
+   Engineering Task Force. Do not take this document as scientifically proven.
+   I do not allow the use of this document in any other form or anywhere else
+   where I have not agreed. All rights reserved by me, in other words, by the
+   internet user under nickname Nircek.
 
    Zezwalam na opublikowanie tego dokumentu w repozytorium Nircek/NR4C w
    serwisie GitHub.
@@ -80,8 +79,8 @@ Table of Contents
       komendy ", np. "%g"NR4C Working Group".
       Zarezerwowanymi nazwami zmiennych są:
        - p (numer aktualnie przetwarzanej strony),
-       - d (krótka data, np "2018-09-24"),
-       - D (długa data, np "24 September 2018"),
+       - d (krótka data, np "2018-09-25"),
+       - D (długa data, np "25 September 2018"),
        - l (złamanie linii),
        - nl (zapobieganie wypisywanie nowej linii, np. podczas wypisywania
          tytułu sekcji).
@@ -105,10 +104,11 @@ Table of Contents
 
 
 
+
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 1]  [
-]  NR4C-3rev0+               NR4C-editor definition                2018-09-24  [
+]  NR4C-3rev0+               NR4C-editor definition                2018-09-25  [
 ]                                                                              [
 ]                                                                              [
 5 Wyrównanie

@@ -27,7 +27,7 @@
     8888888P"   "Y8888  888    888 888  888 888  "Y888 888  "Y88P"  888  888    
 
 ]  NR4C Working Group                                                  Nircek  [
-]  Nircek's Request 4 Comments: 0                           24 September 2018  [
+]  Nircek's Request 4 Comments: 0                           25 September 2018  [
 ]  Revision: 3 UC                                                              [
 
               Nircek's Request 4 Comments Standard Definition v.1               
@@ -54,13 +54,13 @@ Copyright Notice
    prawa zastrzeżone przeze mnie, czyli przez użytkownika internetu podającego
    się pod pseudonimem Nircek.
 
-   This document was created only for private use, wished to offend no one and
-   not deny any globally determined laws, dependencies, etc. There is also
-   nothing to do with the original RFC and Internet Engineering Task Force. Do
-   not take this document for scientifically proven. I do not allow the use of
-   this document in any other form or anywhere else where I have not agreed.
-   All rights reserved by me, in other words, by the internet user under
-   nickname Nircek.
+   This document was created only for private use. The purpose of this document
+   is not to offend anyone or deny any globally determined laws, dependencies,
+   etc. There is also nothing to do with the original RFC and Internet
+   Engineering Task Force. Do not take this document as scientifically proven.
+   I do not allow the use of this document in any other form or anywhere else
+   where I have not agreed. All rights reserved by me, in other words, by the
+   internet user under nickname Nircek.
 
    Zezwalam na opublikowanie tego dokumentu w repozytorium Nircek/NR4C w
    serwisie GitHub.
@@ -108,7 +108,7 @@ Table of Contents
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 1]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-24  [
+]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-25  [
 ]                                                                              [
 ]                                                                              [
               na zewnątrz: 0 cm
@@ -218,7 +218,7 @@ Table of Contents
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 2]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-24  [
+]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-25  [
 ]                                                                              [
 ]                                                                              [
 6 Rewizje
@@ -328,26 +328,26 @@ Table of Contents
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 3]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-24  [
+]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-25  [
 ]                                                                              [
 ]                                                                              [
 
 7 Autorzy
 
-      Nircek (93F9 9DE4 C1D2 7DB2 64ED  91BD 38A9 2C1A 795C 48A2 OPEN PGP)      
-                           ▄▄▄▄▄▄▄  ▄   ▄  ▄ ▄▄▄▄▄▄▄                            
-                           █ ▄▄▄ █ ▀█▄█▀▀▀▀█ █ ▄▄▄ █                            
-                           █ ███ █ ▀▀▄▀▄█▀ ▄ █ ███ █                            
-                           █▄▄▄▄▄█ █ █ ▄ █▀▄ █▄▄▄▄▄█                            
-                           ▄▄▄▄▄ ▄▄▄▄▄ █▄███▄ ▄ ▄ ▄                             
-                           ▀ ▄▄▄ ▄▀ █ ▄▄  ▄█▀▄▄ █▄█▄                            
-                           █ ▄██▄ ▄█▀█▄▄█ ▀ █▄▄▄▄▀▀                             
-                           █  █▀█▄  ▀█ ▀▀ ▄▀▀▄ ▄▀▄▄▄                            
-                           █ ▀ ▀▄▄██ █▄▄▄█▄▄█▄▄▄▄▄▄                             
-                           ▄▄▄▄▄▄▄ █▀ ▀ ▀▄ █ ▄ █  ▄▄                            
-                           █ ▄▄▄ █ ▄▀▄█▄▄ ▄█▄▄▄█▄▄                              
-                           █ ███ █ █ ▄▀ █▄█ ▀█▀▀▀█▀█                            
-                           █▄▄▄▄▄█ ███▀█▄▄ ▀ ██▄█▄▄█                            
+                      Nircek <nircek-2103@protonmail.com>                       
+               93F9 9DE4 C1D2 7DB2 64ED  91BD 38A9 2C1A 795C 48A2               
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -438,7 +438,7 @@ Table of Contents
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 4]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-24  [
+]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-25  [
 ]  NR4C-<nr>rev<revision nr>  <short name of NR4C>               <yyyy-mm-dd>  [
 ]  Pierwsza przykładowa strona                                                 [
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
@@ -548,7 +548,7 @@ Table of Contents
 ]                                                                              [
 ]  <author>                  <name of organization>               [Page <nr>]  [
 ]  Nircek                      NR4C Working Group                    [Page 5]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-24  [
+]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-25  [
 ]  NR4C-<nr>rev<revision nr>  <short name of NR4C>               <yyyy-mm-dd>  [
 ]  Druga przykładowa strona                                                    [
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
