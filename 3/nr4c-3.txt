@@ -54,7 +54,7 @@ Abstract
 
 Table of Contents
 
-   1.   Pierwszy interpreter ..................................................1
+   1.   Interpreter linii .....................................................1
    2.   Podstawowe komendy ....................................................1
    3.   Zaznaczanie ...........................................................1
    4.   Nagłówek i stopka .....................................................1
@@ -64,14 +64,15 @@ Table of Contents
      1    czyste ..............................................................2
      2    punktory ............................................................2
 
-1 Pierwszy interpreter
+1 Interpreter linii
 
-   Pierwszy interpreter bazuje na pierwszym znaku w linii pilku wejściowego.
-   Jeżeli jest to / to jest wtedy uruchamiany tryb komend, czyli normalnie są
-   interpretowane wszystkie komendy wraz z ich argumentami. Jeżeli jest to # to
-   uruchamiany jest tryb komentarza. Jeżeli natomiast nie jest to żaden z
-   powyższych znaków to uruchamiany jest tryb surowy, który nie zwraca na nic
-   uwagę i po prostu przepisuje całą linię z pliku wejściowego do wyjściowego.
+   Interpreter linii pobiera pierwszy znak w linii pilku wejściowego i
+   definiuje na tej podstawie typ elementu. Rozróżniamy 3 typy elementów:
+   a) komenda ('/') - interpretowanie wszystkich kolejnych komend wraz z ich
+      argumentami,
+   b) komentarz ('#') - pomijanie całej linii w pliku wynikowym,
+   c) surowy (każdy inny znak) - przepisanie całej linii do pliku wyjściowego
+      wraz ze znakiem typu.
 
 2 Podstawowe komendy
 
@@ -102,15 +103,17 @@ Table of Contents
    składa się więcej niż z jednej linii możemy użyć komendy :, a żeby zakończyć
    zaznaczenie komendy .
 
-4 Nagłówek i stopka
 
-   Komendy h oraz f włączają tryb nagłówka lub stopki, np.:
+
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 1]  [
 ]  NR4C-3rev0+               NR4C-editor definition                2018-09-29  [
 ]                                                                              [
 ]                                                                              [
+4 Nagłówek i stopka
+
+   Komendy h oraz f włączają tryb nagłówka lub stopki, np.:
 
       /h:
       /c"nagłówek
@@ -153,9 +156,6 @@ Table of Contents
 
    a) - - wprowadza punktowanie od myślników,
    b) a - wprowadza punktowanie kolejnymi literami alfabetu.
-
-
-
 
 
 
