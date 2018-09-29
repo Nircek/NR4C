@@ -1,5 +1,5 @@
 ]  NR4C Working Group                                                  Nircek  [
-]  Nircek's Request 4 Comments: 3                           25 September 2018  [
+]  Nircek's Request 4 Comments: 3                           29 September 2018  [
 ]  Revision: 0+                                                                [
 
                      NR4C-editor Language Definition v.1.0                      
@@ -46,17 +46,28 @@ Abstract
 
 Table of Contents
 
-   1.   Pierwszy interpreter ..................................................1
-   2.   Podstawowe komendy ....................................................1
-   3.   Zaznaczanie ...........................................................1
-   4.   Nagłówek i stopka .....................................................1
-   5.   Wyrównanie ............................................................1
-   6.   Segmenty tekstu .......................................................2
-   7.   Wcięcia ...............................................................2
+   1.   NR4C-editor ...........................................................1
+   2.   Pierwszy interpreter ..................................................1
+   3.   Podstawowe komendy ....................................................1
+   4.   Zaznaczanie ...........................................................1
+   5.   Nagłówek i stopka .....................................................1
+   6.   Wyrównanie ............................................................2
+   7.   Segmenty tekstu .......................................................2
+   8.   Wcięcia ...............................................................2
      1    czyste ..............................................................2
      2    punktory ............................................................2
 
-1 Pierwszy interpreter
+1 NR4C-editor
+
+   NR4C-editor to program służący do prostego i szybkiego generowania
+   dokumentów NR4C, pozwala on na automatyzację składania tekstu do druku.
+   Przez stosowanie komend umożliwia on formatowanie tekstu i stron przy użyciu
+   nagłówków, stopek, wyrównań, tytułów, akapitów, wcięć, automatycznie
+   generowanych spisów treści, punktowań, tabulatorów, inteligentnych
+   tabulatorów (auto tabulatorów do tworzenia tabel), inteligentnego zawijania
+   wierszy.
+
+2 Pierwszy interpreter
 
    Pierwszy interpreter bazuje na pierwszym znaku w linii pilku wejściowego.
    Jeżeli jest to / to jest wtedy uruchamiany tryb komend, czyli normalnie są
@@ -65,7 +76,7 @@ Table of Contents
    powyższych znaków to uruchamiany jest tryb surowy, który nie zwraca na nic
    uwagę i po prostu przepisuje całą linię z pliku wejściowego do wyjściowego.
 
-2 Podstawowe komendy
+3 Podstawowe komendy
 
    a) " - umożliwia wprowadzenie tekstu.
       Jeżeli tekst będzie zajmował więcej miejsca niż jest dostępne na stronie
@@ -79,8 +90,8 @@ Table of Contents
       komendy ", np. "%g"NR4C Working Group".
       Zarezerwowanymi nazwami zmiennych są:
        - p (numer aktualnie przetwarzanej strony),
-       - d (krótka data, np "2018-09-25"),
-       - D (długa data, np "25 September 2018"),
+       - d (krótka data, np "2018-09-29"),
+       - D (długa data, np "29 September 2018"),
        - l (złamanie linii),
        - nl (zapobieganie wypisywanie nowej linii, np. podczas wypisywania
          tytułu sekcji).
@@ -88,13 +99,19 @@ Table of Contents
       argumencie komendy " przez podanie % oraz nazwy zmiennej.
    c) o - wypisanie ToC (spisu treści).
 
-3 Zaznaczanie
+4 Zaznaczanie
 
    Żeby "zaznaczyć" tzn poddać danemu trybowi/efektowi większy fragment, który
    składa się więcej niż z jednej linii możemy użyć komendy :, a żeby zakończyć
    zaznaczenie komendy .
 
-4 Nagłówek i stopka
+]                                                                              [
+]                                                                              [
+]  Nircek                      NR4C Working Group                    [Page 1]  [
+]  NR4C-3rev0+               NR4C-editor definition                2018-09-29  [
+]                                                                              [
+]                                                                              [
+5 Nagłówek i stopka
 
    Komendy h oraz f włączają tryb nagłówka lub stopki, np.:
 
@@ -102,16 +119,7 @@ Table of Contents
       /c"nagłówek
       /.e
 
-
-
-
-]                                                                              [
-]                                                                              [
-]  Nircek                      NR4C Working Group                    [Page 1]  [
-]  NR4C-3rev0+               NR4C-editor definition                2018-09-25  [
-]                                                                              [
-]                                                                              [
-5 Wyrównanie
+6 Wyrównanie
 
    Żeby skorzystać z wyrównań należy użyć tzw formatowanej linii, którą trzeba
    zakończyć komendą ., która wypisuje aktualną formatowaną linię oraz czyści
@@ -122,7 +130,7 @@ Table of Contents
    b) r - wyrównanie do prawej
    c) c - wyrównanie do środka
 
-6 Segmenty tekstu
+7 Segmenty tekstu
 
    Żeby podzielić tekst na części możemy użyć 4 typów znaczników:
    a) s - znacznik rozdziału,
@@ -132,9 +140,9 @@ Table of Contents
    Tytuły sekcji są "przyklejone" do nastepnej komendy " w celu niezostawiania
    ich na innej stronie niż sama sekcja.
 
-7 Wcięcia
+8 Wcięcia
 
-7.1 czyste
+8.1 czyste
 
    a) p - wprowadza paragraf,
    b) / - tabulator pamiętany (należy wcześniej użyć w argumencie komendy "
@@ -144,18 +152,10 @@ Table of Contents
       tabelę, możemy użyć znaku \\ jako argument komendy " i znaleźć optymalne
       wcięcie dla wszystkich komórek tabeli, a po całej tabeli użyć komendy \\.
 
-7.2 punktory
+8.2 punktory
 
    a) - - wprowadza punktowanie od myślników,
    b) a - wprowadza punktowanie kolejnymi literami alfabetu.
-
-
-
-
-
-
-
-
 
 
 
