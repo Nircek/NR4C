@@ -101,7 +101,7 @@ Table of Contents
 
    Żeby "zaznaczyć", tzn poddać danemu trybowi/efektowi fragment, który składa
    się z więcej niż z jednej linii, możemy użyć komendy `:`, a żeby zakończyć
-   zaznaczenie - komendy `.`.
+   zaznaczenie - komendy `e`.
 
 
 
