@@ -68,40 +68,40 @@ Table of Contents
 
    Interpreter linii pobiera pierwszy znak w linii pilku wejściowego i
    definiuje na tej podstawie typ elementu. Rozróżniamy 3 typy elementów:
-   a) komenda ('/') - interpretowanie wszystkich kolejnych komend wraz z ich
+   a) komenda ("/") - interpretowanie wszystkich kolejnych komend wraz z ich
       argumentami,
-   b) komentarz ('#') - pomijanie całej linii w pliku wynikowym,
+   b) komentarz ("#") - pomijanie całej linii w pliku wynikowym,
    c) surowy (każdy inny znak) - przepisanie całej linii do pliku wyjściowego
       wraz ze znakiem typu.
 
 2 Podstawowe komendy
 
-   a) " - umożliwia wprowadzenie tekstu.
+   a) `"` - umożliwia wprowadzenie tekstu.
       Jeżeli tekst będzie zajmował więcej miejsca niż jest dostępne na stronie
       to zostanie złamany. Ponadto musimy uciekać niektóre znaki:
-       - %, bo normalnie jest on używany do zmiennych,
-       - |, bo normalnie jest on używany do pamiętanych wcięć,
-       - \\, bo normalnie jest on używany do inteligentnych tabulatorów.
-   b) % - definiowanie komend, pierwszy argument (jeden znak) to nazwa
+       - "%", bo normalnie jest on używany do zmiennych,
+       - "|", bo normalnie jest on używany do pamiętanych wcięć,
+       - "\\", bo normalnie jest on używany do inteligentnych tabulatorów.
+   b) `%` - definiowanie komend, pierwszy argument (jeden znak) to nazwa
       zmiennej, a drugi argument to wartość danej zmiennej, np "%23".
       Jeżeli potrzebujemy więcej niż jednego znaku możemy użyć zagnieżdżonej
-      komendy ", np. "%g"NR4C Working Group".
+      komendy ", `np`. "%g"NR4C Working Group".
       Zarezerwowanymi nazwami zmiennych są:
-       - p (numer aktualnie przetwarzanej strony),
-       - d (krótka data, np "2018-09-29"),
-       - D (długa data, np "29 September 2018"),
-       - l (złamanie linii),
-       - nl (zapobieganie wypisywanie nowej linii, np. podczas wypisywania
+       - 'p' (numer aktualnie przetwarzanej strony),
+       - 'd' (krótka data, np "2018-09-29"),
+       - 'D' (długa data, np "29 September 2018"),
+       - 'l' (złamanie linii),
+       - 'nl' (zapobieganie wypisywanie nowej linii, np. podczas wypisywania
          tytułu sekcji).
       Jeżeli chcemy użyć danej zmiennej w tekście to musimy ją umieścić w
-      argumencie komendy " przez podanie % oraz nazwy zmiennej.
-   c) o - wypisanie ToC (spisu treści).
+      argumencie komendy `"` przez podanie "%" oraz nazwy zmiennej.
+   c) `o` - wypisanie ToC (spisu treści).
 
 3 Zaznaczanie
 
    Żeby "zaznaczyć", tzn poddać danemu trybowi/efektowi fragment, który składa
-   się z więcej niż z jednej linii, możemy użyć komendy :, a żeby zakończyć
-   zaznaczenie komendy .
+   się z więcej niż z jednej linii, możemy użyć komendy `:`, a żeby zakończyć
+   zaznaczenie - komendy `.`.
 
 
 
@@ -113,7 +113,7 @@ Table of Contents
 ]                                                                              [
 4 Nagłówek i stopka
 
-   Komendy h oraz f włączają tryb nagłówka lub stopki, np.:
+   Komendy `h` oraz `f` włączają tryb nagłówka lub stopki, np.:
 
       /h:
       /c"nagłówek
@@ -122,39 +122,39 @@ Table of Contents
 5 Wyrównanie
 
    Żeby skorzystać z wyrównań należy stworzyć tzw. formatowaną linię oraz ją
-   wypisać komendą . Żeby wpisać tekst w odpowiednim miejscu należy użyć
+   wypisać komendą `.`. Żeby wpisać tekst w odpowiednim miejscu należy użyć
    poniższych komend:
-   a) l - wyrównanie do lewej
-   b) r - wyrównanie do prawej
-   c) c - wyrównanie do środka
+   a) `l` - wyrównanie do lewej
+   b) `r` - wyrównanie do prawej
+   c) `c` - wyrównanie do środka
 
 6 Segmenty tekstu
 
    Żeby podzielić tekst na części możemy użyć 4 typów znaczników:
-   a) s - znacznik rozdziału,
-   b) u - znacznik podrozdziału,
-   c) t - znacznik tytułu (tak jak s tylko bez numerowania),
-   d) k - znacznik tematu (tak jak t tylko bez wpisu w ToC).
-   Tytuły sekcji są "przyklejone" do nastepnej komendy " w celu niezostawiania
-   ich na innej stronie niż sama sekcja.
+   a) `s` - znacznik rozdziału,
+   b) `u` - znacznik podrozdziału,
+   c) `t` - znacznik tytułu (tak jak s tylko bez numerowania),
+   d) `k` - znacznik tematu (tak jak t tylko bez wpisu w ToC).
+   Tytuły sekcji są "przyklejone" do nastepnej komendy `"` w celu
+   niezostawiania ich na innej stronie niż sama sekcja.
 
 7 Wcięcia
 
 7.1 czyste
 
-   a) p - wprowadza paragraf,
-   b) / - tabulator pamiętany (należy wcześniej użyć w argumencie komendy "
-      znaku |, żeby zapamiętać odległość dla tego znaku, a następnie, żeby
+   a) `p` - wprowadza paragraf,
+   b) `/` - tabulator pamiętany (należy wcześniej użyć w argumencie komendy `"`
+      znaku "|", żeby zapamiętać odległość dla tego znaku, a następnie, żeby
       mógł zostać użyty z pomocą tej komendy),
-   c) \\ - inteligentny tabulator w danym tekście jeżeli potrzebujemy stworzyć
-      tabelę, możemy użyć znaku \\ jako argument komendy " i znaleźć optymalne
-      wcięcie dla wszystkich komórek tabeli, a po całej tabeli użyć komendy \\.
+   c) `\\` - inteligentny tabulator w danym tekście jeżeli potrzebujemy
+      stworzyć tabelę, możemy użyć znaku "\\" jako argument komendy `"` i
+      znaleźć optymalne wcięcie dla wszystkich komórek tabeli, a po całej
+      tabeli użyć komendy `\\`.
 
 7.2 punktory
 
-   a) - - wprowadza punktowanie od myślników,
-   b) a - wprowadza punktowanie kolejnymi literami alfabetu.
-
+   a) `-` - wprowadza punktowanie od myślników,
+   b) `a` - wprowadza punktowanie kolejnymi literami alfabetu.
 
 
 
