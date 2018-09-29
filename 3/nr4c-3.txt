@@ -40,25 +40,6 @@ Copyright Notice
 
 Abstract
 
-   Ten dokument definiuje język programu NR4C-editor w wersji 1. Tego typu
-   dokument jest potrzebny, żeby zgrupować oraz przedstawić w prosty i czytelny
-   wszystkie komendy oraz możliwości tego języka.
-
-Table of Contents
-
-   1.   NR4C-editor ...........................................................1
-   2.   Pierwszy interpreter ..................................................1
-   3.   Podstawowe komendy ....................................................1
-   4.   Zaznaczanie ...........................................................1
-   5.   Nagłówek i stopka .....................................................1
-   6.   Wyrównanie ............................................................2
-   7.   Segmenty tekstu .......................................................2
-   8.   Wcięcia ...............................................................2
-     1    czyste ..............................................................2
-     2    punktory ............................................................2
-
-1 NR4C-editor
-
    NR4C-editor to program służący do prostego i szybkiego generowania
    dokumentów NR4C, pozwala on na automatyzację składania tekstu do druku.
    Przez stosowanie komend umożliwia on formatowanie tekstu i stron przy użyciu
@@ -67,7 +48,23 @@ Table of Contents
    tabulatorów (auto tabulatorów do tworzenia tabel), inteligentnego zawijania
    wierszy.
 
-2 Pierwszy interpreter
+   Ten dokument definiuje język plików wejściowych programu NR4C-editor w
+   wersji 1. Tego typu dokument jest potrzebny, żeby zgrupować oraz przedstawić
+   w prosty i czytelny wszystkie komendy oraz możliwości tego języka.
+
+Table of Contents
+
+   1.   Pierwszy interpreter ..................................................1
+   2.   Podstawowe komendy ....................................................1
+   3.   Zaznaczanie ...........................................................1
+   4.   Nagłówek i stopka .....................................................1
+   5.   Wyrównanie ............................................................2
+   6.   Segmenty tekstu .......................................................2
+   7.   Wcięcia ...............................................................2
+     1    czyste ..............................................................2
+     2    punktory ............................................................2
+
+1 Pierwszy interpreter
 
    Pierwszy interpreter bazuje na pierwszym znaku w linii pilku wejściowego.
    Jeżeli jest to / to jest wtedy uruchamiany tryb komend, czyli normalnie są
@@ -76,7 +73,7 @@ Table of Contents
    powyższych znaków to uruchamiany jest tryb surowy, który nie zwraca na nic
    uwagę i po prostu przepisuje całą linię z pliku wejściowego do wyjściowego.
 
-3 Podstawowe komendy
+2 Podstawowe komendy
 
    a) " - umożliwia wprowadzenie tekstu.
       Jeżeli tekst będzie zajmował więcej miejsca niż jest dostępne na stronie
@@ -99,27 +96,27 @@ Table of Contents
       argumencie komendy " przez podanie % oraz nazwy zmiennej.
    c) o - wypisanie ToC (spisu treści).
 
-4 Zaznaczanie
+3 Zaznaczanie
 
    Żeby "zaznaczyć" tzn poddać danemu trybowi/efektowi większy fragment, który
    składa się więcej niż z jednej linii możemy użyć komendy :, a żeby zakończyć
    zaznaczenie komendy .
 
+4 Nagłówek i stopka
+
+   Komendy h oraz f włączają tryb nagłówka lub stopki, np.:
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 1]  [
 ]  NR4C-3rev0+               NR4C-editor definition                2018-09-29  [
 ]                                                                              [
 ]                                                                              [
-5 Nagłówek i stopka
-
-   Komendy h oraz f włączają tryb nagłówka lub stopki, np.:
 
       /h:
       /c"nagłówek
       /.e
 
-6 Wyrównanie
+5 Wyrównanie
 
    Żeby skorzystać z wyrównań należy użyć tzw formatowanej linii, którą trzeba
    zakończyć komendą ., która wypisuje aktualną formatowaną linię oraz czyści
@@ -130,7 +127,7 @@ Table of Contents
    b) r - wyrównanie do prawej
    c) c - wyrównanie do środka
 
-7 Segmenty tekstu
+6 Segmenty tekstu
 
    Żeby podzielić tekst na części możemy użyć 4 typów znaczników:
    a) s - znacznik rozdziału,
@@ -140,9 +137,9 @@ Table of Contents
    Tytuły sekcji są "przyklejone" do nastepnej komendy " w celu niezostawiania
    ich na innej stronie niż sama sekcja.
 
-8 Wcięcia
+7 Wcięcia
 
-8.1 czyste
+7.1 czyste
 
    a) p - wprowadza paragraf,
    b) / - tabulator pamiętany (należy wcześniej użyć w argumencie komendy "
@@ -152,10 +149,13 @@ Table of Contents
       tabelę, możemy użyć znaku \\ jako argument komendy " i znaleźć optymalne
       wcięcie dla wszystkich komórek tabeli, a po całej tabeli użyć komendy \\.
 
-8.2 punktory
+7.2 punktory
 
    a) - - wprowadza punktowanie od myślników,
    b) a - wprowadza punktowanie kolejnymi literami alfabetu.
+
+
+
 
 
 
