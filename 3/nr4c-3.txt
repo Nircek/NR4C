@@ -7,10 +7,10 @@
 
 Status of this Memo
 
-   This document specifies a definition of NR4C-editor language for the
-   community and requests discussions and suggestions for improvements. Please
-   refer to the current version and revision of NR4C Standard. Distribution of
-   this memo is limited.
+   This document specifies a definition of NR4C-editor's input files language
+   for the community and requests discussions and suggestions for improvements.
+   Please refer to the current version and revision of NR4C Standard.
+   Distribution of this memo is limited.
 
 
 Copyright Notice
@@ -99,8 +99,8 @@ Table of Contents
 
 3 Zaznaczanie
 
-   Żeby "zaznaczyć" tzn poddać danemu trybowi/efektowi większy fragment, który
-   składa się więcej niż z jednej linii możemy użyć komendy :, a żeby zakończyć
+   Żeby "zaznaczyć", tzn poddać danemu trybowi/efektowi fragment, który składa
+   się z więcej niż z jednej linii, możemy użyć komendy :, a żeby zakończyć
    zaznaczenie komendy .
 
 
@@ -121,11 +121,9 @@ Table of Contents
 
 5 Wyrównanie
 
-   Żeby skorzystać z wyrównań należy użyć tzw formatowanej linii, którą trzeba
-   zakończyć komendą ., która wypisuje aktualną formatowaną linię oraz czyści
-   tę w pamięci.
-   Żeby wpisać tekst w odpowiednio wyrównanym miejscu należy użyć poniższych
-   komend:
+   Żeby skorzystać z wyrównań należy stworzyć tzw. formatowaną linię oraz ją
+   wypisać komendą . Żeby wpisać tekst w odpowiednim miejscu należy użyć
+   poniższych komend:
    a) l - wyrównanie do lewej
    b) r - wyrównanie do prawej
    c) c - wyrównanie do środka
@@ -156,6 +154,8 @@ Table of Contents
 
    a) - - wprowadza punktowanie od myślników,
    b) a - wprowadza punktowanie kolejnymi literami alfabetu.
+
+
 
 
 
