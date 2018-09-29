@@ -85,7 +85,7 @@ Table of Contents
    b) `%` - definiowanie komend, pierwszy argument (jeden znak) to nazwa
       zmiennej, a drugi argument to wartość danej zmiennej, np "%23".
       Jeżeli potrzebujemy więcej niż jednego znaku możemy użyć zagnieżdżonej
-      komendy ", `np`. "%g"NR4C Working Group".
+      komendy `"`, np. "%g"NR4C Working Group".
       Zarezerwowanymi nazwami zmiennych są:
        - 'p' (numer aktualnie przetwarzanej strony),
        - 'd' (krótka data, np "2018-09-29"),
@@ -113,7 +113,12 @@ Table of Contents
 ]                                                                              [
 4 Nagłówek i stopka
 
-   Komendy `h` oraz `f` włączają tryb nagłówka lub stopki, np.:
+   Komendy `h` oraz `f` włączają tryb nagłówka lub stopki. Wszystko co
+   zostałoby normalnie wypisane na ekran w tym trybie (oprócz elementów
+   surowych) będzie wypisywane przy każdym nagłówku. Oczywiście, żeby móc
+   zmieścić tam więcej niż jedną linię trzeba wszystko zaznaczyć
+
+   Przykład:
 
       /h:
       /c"nagłówek
@@ -155,11 +160,6 @@ Table of Contents
 
    a) `-` - wprowadza punktowanie od myślników,
    b) `a` - wprowadza punktowanie kolejnymi literami alfabetu.
-
-
-
-
-
 
 
 
