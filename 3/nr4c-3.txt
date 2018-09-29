@@ -116,7 +116,7 @@ Table of Contents
    Komendy `h` oraz `f` włączają tryb nagłówka lub stopki. Wszystko co
    zostałoby normalnie wypisane na ekran w tym trybie (oprócz elementów
    surowych) będzie wypisywane przy każdym nagłówku. Oczywiście, żeby móc
-   zmieścić tam więcej niż jedną linię trzeba wszystko zaznaczyć
+   zmieścić tam więcej niż jedną linię trzeba wszystko zaznaczyć.
 
    Przykład:
 
@@ -129,9 +129,9 @@ Table of Contents
    Żeby skorzystać z wyrównań należy stworzyć tzw. formatowaną linię oraz ją
    wypisać komendą `.`. Żeby wpisać tekst w odpowiednim miejscu należy użyć
    poniższych komend:
-   a) `l` - wyrównanie do lewej
-   b) `r` - wyrównanie do prawej
-   c) `c` - wyrównanie do środka
+   a) `l` - wyrównanie do lewej,
+   b) `r` - wyrównanie do prawej,
+   c) `c` - wyrównanie do środka.
 
 6 Segmenty tekstu
 
