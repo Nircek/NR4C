@@ -27,7 +27,7 @@
     8888888P"   "Y8888  888    888 888  888 888  "Y888 888  "Y88P"  888  888    
 
 ]  NR4C Working Group                                                  Nircek  [
-]  Nircek's Request 4 Comments: 0                           25 September 2018  [
+]  Nircek's Request 4 Comments: 0                           30 September 2018  [
 ]  Revision: 3 UC                                                              [
 
               Nircek's Request 4 Comments Standard Definition v.1               
@@ -108,7 +108,7 @@ Table of Contents
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 1]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-25  [
+]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-30  [
 ]                                                                              [
 ]                                                                              [
               na zewnątrz: 0 cm
@@ -218,7 +218,7 @@ Table of Contents
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 2]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-25  [
+]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-30  [
 ]                                                                              [
 ]                                                                              [
 6 Rewizje
@@ -232,8 +232,8 @@ Table of Contents
                                   NR4C-%nrev%r                                  
 
     gdzie %n oznacza numer NR4C, a %r - numer rewizji.
-
-
+   Numery rewizji powinny być numerowane od 1. W przypadku rewizji o numerze 0+
+   oznacza to, że rewizja jest niestabilna.
 
 
 
@@ -328,7 +328,7 @@ Table of Contents
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 3]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-25  [
+]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-30  [
 ]                                                                              [
 ]                                                                              [
 
@@ -438,7 +438,7 @@ Table of Contents
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 4]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-25  [
+]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-30  [
 ]  NR4C-<nr>rev<revision nr>  <short name of NR4C>               <yyyy-mm-dd>  [
 ]  Pierwsza przykładowa strona                                                 [
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
@@ -548,7 +548,7 @@ Table of Contents
 ]                                                                              [
 ]  <author>                  <name of organization>               [Page <nr>]  [
 ]  Nircek                      NR4C Working Group                    [Page 5]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-25  [
+]  NR4C-0rev3 UC            NR4C Standard Definition               2018-09-30  [
 ]  NR4C-<nr>rev<revision nr>  <short name of NR4C>               <yyyy-mm-dd>  [
 ]  Druga przykładowa strona                                                    [
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
