@@ -28,7 +28,7 @@
 
 ]  NR4C Working Group                                                  Nircek  [
 ]  Nircek's Request 4 Comments: 0                              1 October 2018  [
-]  Revision: 3 UC                                                              [
+]  Revision: 3                                                                 [
 
               Nircek's Request 4 Comments Standard Definition v.1               
 
@@ -108,7 +108,7 @@ Table of Contents
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 1]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-10-01  [
+]  NR4C-0rev3               NR4C Standard Definition               2018-10-01  [
 ]                                                                              [
 ]                                                                              [
               na zewnątrz: 0 cm
@@ -218,7 +218,7 @@ Table of Contents
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 2]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-10-01  [
+]  NR4C-0rev3               NR4C Standard Definition               2018-10-01  [
 ]                                                                              [
 ]                                                                              [
    Jeżeli ktokolwiek chciałby zweryfikować poprawność dokumentu może napisać
@@ -328,7 +328,7 @@ Table of Contents
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 3]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-10-01  [
+]  NR4C-0rev3               NR4C Standard Definition               2018-10-01  [
 ]                                                                              [
 ]                                                                              [
 
@@ -438,7 +438,7 @@ Table of Contents
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                      NR4C Working Group                    [Page 4]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-10-01  [
+]  NR4C-0rev3               NR4C Standard Definition               2018-10-01  [
 ]  NR4C-<nr>rev<revision nr>  <short name of NR4C>               <yyyy-mm-dd>  [
 ]  Pierwsza przykładowa strona                                                 [
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
@@ -548,7 +548,7 @@ Table of Contents
 ]                                                                              [
 ]  <author>                  <name of organization>               [Page <nr>]  [
 ]  Nircek                      NR4C Working Group                    [Page 5]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-10-01  [
+]  NR4C-0rev3               NR4C Standard Definition               2018-10-01  [
 ]  NR4C-<nr>rev<revision nr>  <short name of NR4C>               <yyyy-mm-dd>  [
 ]  Druga przykładowa strona                                                    [
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
