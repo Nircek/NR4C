@@ -1,446 +1,235 @@
+/%g"NR4C Working Group
+/%s"NR4C Standard Definition
+/%n"0
+/%r"3 UC
+/h:
+/l"]  NR4C-%nrev%r
+/c"%s
+/r"%d  [
+/.l"]
+/r"[
+/.l"]
+/r"[
+/.e
+/f:
+/l"]
+/r"[
+/.l"]
+/r"[
+/.l"]  Nircek
+/c"%g
+/r"[Page %p]  [
+/.e
+
+/c:
+/"888b    888 8888888b.      d8888   .d8888b. 
+/."8888b   888 888   Y88b    d8P888  d88P  Y88b
+/."88888b  888 888    888   d8P 888  888    888
+/."888Y88b 888 888   d88P  d8P  888  888       
+/."888 Y88b888 8888888P"  d88   888  888       
+/."888  Y88888 888 T88b   8888888888 888    888
+/."888   Y8888 888  T88b        888  Y88b  d88P
+/."888    Y888 888   T88b       888   "Y8888P" 
+/.
+
+/" .d8888b.  888                           888                       888
+/."d88P  Y88b 888                           888                       888
+/."Y88b.      888                           888                       888
+/." "Y888b.   888888  8888b.  88888b.   .d88888  8888b.  888d888  .d88888
+/."    "Y88b. 888        "88b 888 "88b d88" 888     "88b 888P"   d88" 888
+/."      "888 888    .d888888 888  888 888  888 .d888888 888     888  888
+/."Y88b  d88P Y88b.  888  888 888  888 Y88b 888 888  888 888     Y88b 888
+/." "Y8888P"   "Y888 "Y888888 888  888  "Y88888 "Y888888 888      "Y88888
+/.
+
+/"8888888b.            .d888 d8b          d8b 888    d8b                  
+/."888  "Y88b          d88P"  Y8P          Y8P 888    Y8P                  
+/."888    888          888                     888                         
+/."888    888  .d88b.  888888 888 88888b.  888 888888 888  .d88b.  88888b. 
+/."888    888 d8P  Y8b 888    888 888 "88b 888 888    888 d88""88b 888 "88b
+/."888    888 88888888 888    888 888  888 888 888    888 888  888 888  888
+/."888  .d88P Y8b.     888    888 888  888 888 Y88b.  888 Y88..88P 888  888
+/."8888888P"   "Y8888  888    888 888  888 888  "Y888 888  "Y88P"  888  888
+/.
+/e
+
+/l"]  %g
+/r"Nircek  [
+/.l"]  Nircek's Request 4 Comments: %n
+/r"%D  [
+/.l"]  Revision: %r
+/r"[
+/.
+
+/c"Nircek's Request 4 Comments Standard Definition v.1
+/.
+
+/k"Status of this Memo
+
+/p"This document specifies a standard of Nircek's Request 4 Comments documents for the community and requests discussions and suggestions for improvements. Please refer to the current version and revision of NR4C Standard. Distribution of this memo is limited.
+
+/k"Copyright Notice
+
+/pl"Copyright (c) 2018 Nircek
+/r"ALL RIGHTS RESERVED!!!
+/.
+
+/p"Ten dokument został stworzony tylko i wyłącznie dla użytku prywatnego, nie miał na celu nikogo urazić, ani zaprzeczyć jakiekolwiek globalnie ustalone prawa, zależności itp. Nie ma także nic wspólnego z oryginalnym RFC oraz z Internet Engineering Task Force. Nie należy brać tego dokumentu jako naukowo potwierdzonego. Nie pozwalam na używanie tego dokumentu w żadnej innej formie, ani gdziekolwiek indziej tam, gdzie nie wyraziłem zgody. Wszystkie prawa zastrzeżone przeze mnie, czyli przez użytkownika internetu podającego się pod pseudonimem Nircek.
+
+/p"This document was created only for private use. The purpose of this document is not to offend anyone or deny any globally determined laws, dependencies, etc. There is also nothing to do with the original RFC and Internet Engineering Task Force. Do not take this document as scientifically proven. I do not allow the use of this document in any other form or anywhere else where I have not agreed. All rights reserved by me, in other words, by the internet user under nickname Nircek.
+
+/p"Zezwalam na opublikowanie tego dokumentu w repozytorium Nircek/NR4C w serwisie GitHub.
+
+/k"Abstract
+
+/p"Ten dokument definiuje standard dokumentów NR4C w wersji 1. Tego typu dokument jest potrzebny, żeby zgrupować oraz przedstawić w prosty i czytelny sposób wszystkie podstawowe zasady szablonów do wszystkich dokumentów NR4C.
+
+/k"Table of Contents
+/o
+
+/s"Znaczenie
+
+/p"Większość rzeczy w standardzie wynika z wymiarów kolumny w programie M$ Word, przy następujących zmianach od domyślnych ustawień:
+
+/p:
+/-"Rozmiar papieru: \A4 (210 x 297 mm)
+/-"Margines |górny: \1,1 cm
+//"dolny: \1,1 cm
+//"lewy: \1,1 cm
+//"prawy: \1,1 cm
+/-"Orientacja: \pionowa
+/-"Kolumny: \dwa
+/-"Szerokość kolumn: \9,4 cm
+/-"Odstępy kolumn: \0 cm
+/-"Czcionka: \Consolas
+/-"Rozmiar czcionki: \6 pt
+/-"Wcięcia |wewnątrz: \0 cm
+//"na zewnątrz: \0 cm
+/-"Odstępy |przed: \0 pt
+//"po: \0 pt
+/-"Interlinia: \pojedyncze
+/e
+/\
 
-                  888b    888 8888888b.      d8888   .d8888b.                   
-                  8888b   888 888   Y88b    d8P888  d88P  Y88b                  
-                  88888b  888 888    888   d8P 888  888    888                  
-                  888Y88b 888 888   d88P  d8P  888  888                         
-                  888 Y88b888 8888888P"  d88   888  888                         
-                  888  Y88888 888 T88b   8888888888 888    888                  
-                  888   Y8888 888  T88b        888  Y88b  d88P                  
-                  888    Y888 888   T88b       888   "Y8888P"                   
-
-      .d8888b.  888                           888                       888     
-     d88P  Y88b 888                           888                       888     
-     Y88b.      888                           888                       888     
-      "Y888b.   888888  8888b.  88888b.   .d88888  8888b.  888d888  .d88888     
-         "Y88b. 888        "88b 888 "88b d88" 888     "88b 888P"   d88" 888     
-           "888 888    .d888888 888  888 888  888 .d888888 888     888  888     
-     Y88b  d88P Y88b.  888  888 888  888 Y88b 888 888  888 888     Y88b 888     
-      "Y8888P"   "Y888 "Y888888 888  888  "Y88888 "Y888888 888      "Y88888     
-
-    8888888b.            .d888 d8b          d8b 888    d8b                      
-    888  "Y88b          d88P"  Y8P          Y8P 888    Y8P                      
-    888    888          888                     888                             
-    888    888  .d88b.  888888 888 88888b.  888 888888 888  .d88b.  88888b.     
-    888    888 d8P  Y8b 888    888 888 "88b 888 888    888 d88""88b 888 "88b    
-    888    888 88888888 888    888 888  888 888 888    888 888  888 888  888    
-    888  .d88P Y8b.     888    888 888  888 888 Y88b.  888 Y88..88P 888  888    
-    8888888P"   "Y8888  888    888 888  888 888  "Y888 888  "Y88P"  888  888    
-
-]  NR4C Working Group                                                  Nircek  [
-]  Nircek's Request 4 Comments: 0                              1 October 2018  [
-]  Revision: 3 UC                                                              [
-
-              Nircek's Request 4 Comments Standard Definition v.1               
-
-
-Status of this Memo
-
-   This document specifies a standard of Nircek's Request 4 Comments documents
-   for the community and requests discussions and suggestions for improvements.
-   Please refer to the current version and revision of NR4C Standard.
-   Distribution of this memo is limited.
-
-
-Copyright Notice
-
-   Copyright (c) 2018 Nircek                              ALL RIGHTS RESERVED!!!
-
-   Ten dokument został stworzony tylko i wyłącznie dla użytku prywatnego, nie
-   miał na celu nikogo urazić, ani zaprzeczyć jakiekolwiek globalnie ustalone
-   prawa, zależności itp. Nie ma także nic wspólnego z oryginalnym RFC oraz z
-   Internet Engineering Task Force. Nie należy brać tego dokumentu jako naukowo
-   potwierdzonego. Nie pozwalam na używanie tego dokumentu w żadnej innej
-   formie, ani gdziekolwiek indziej tam, gdzie nie wyraziłem zgody. Wszystkie
-   prawa zastrzeżone przeze mnie, czyli przez użytkownika internetu podającego
-   się pod pseudonimem Nircek.
-
-   This document was created only for private use. The purpose of this document
-   is not to offend anyone or deny any globally determined laws, dependencies,
-   etc. There is also nothing to do with the original RFC and Internet
-   Engineering Task Force. Do not take this document as scientifically proven.
-   I do not allow the use of this document in any other form or anywhere else
-   where I have not agreed. All rights reserved by me, in other words, by the
-   internet user under nickname Nircek.
-
-   Zezwalam na opublikowanie tego dokumentu w repozytorium Nircek/NR4C w
-   serwisie GitHub.
-
-
-Abstract
-
-   Ten dokument definiuje standard dokumentów NR4C w wersji 1. Tego typu
-   dokument jest potrzebny, żeby zgrupować oraz przedstawić w prosty i czytelny
-   sposób wszystkie podstawowe zasady szablonów do wszystkich dokumentów NR4C.
-
-Table of Contents
-
-   1.   Znaczenie .............................................................1
-   2.   Miejsce ...............................................................2
-   3.   Informacje w nagłówku i stopce ........................................2
-     1    Pierwszy nagłówek ...................................................2
-     2    Nagłówek rozpoczynający zwykłą stronę ...............................2
-     3    Stopka ..............................................................2
-   4.   Ogólna konstrukcja dokumentu ..........................................2
-   5.   System numerów NR4C ...................................................2
-   6.   Rewizje ...............................................................3
-   7.   Autorzy ...............................................................4
-        Pierwsza przykładowa strona ...........................................5
-        Druga przykładowa strona ..............................................6
-
-
-1 Znaczenie
-
-   Większość rzeczy w standardzie wynika z wymiarów kolumny w programie M$
-   Word, przy następujących zmianach od domyślnych ustawień:
-
-    - Rozmiar papieru:     A4 (210 x 297 mm)
-    - Margines górny:      1,1 cm
-               dolny:      1,1 cm
-               lewy:       1,1 cm
-               prawy:      1,1 cm
-    - Orientacja:          pionowa
-    - Kolumny:             dwa
-    - Szerokość kolumn:    9,4 cm
-    - Odstępy kolumn:      0 cm
-    - Czcionka:            Consolas
-    - Rozmiar czcionki:    6 pt
-    - Wcięcia wewnątrz:    0 cm
-]                                                                              [
-]                                                                              [
-]  Nircek                      NR4C Working Group                    [Page 1]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-10-01  [
-]                                                                              [
-]                                                                              [
-              na zewnątrz: 0 cm
-    - Odstępy przed:       0 pt
-              po:          0 pt
-    - Interlinia:          pojedyncze
-
-   Trzymanie się powyższych ustawień jest potrzebne do prostego drukowania NR4C.
-
-
-2 Miejsce
-
-   Jedna strona, która mieści się na połowie strony A4 (w pionie) ma 80 znaków
-   szerokości i 110 znaków wysokości. KAŻDY nagłówek i KAŻDA stopka powinna
-   mieć minimum 3 linie wysokości. Jeżeli ten warunek będzie spełniony to
-   maksymalnie można mieć 104 linie na zawartość strony.
-
-3 Informacje w nagłówku i stopce
-  (wypisywane od góry)
-
-
-3.1 Pierwszy nagłówek
-
-   Jest to ten, który znajduje się na stronie tytułowej. Na samej górze może
-   znajdować się tytuł dokumentu przedstawiony w postaci ASCII art'a.
-
-   a) po lewej stronie:
-       - nazwa organizacji tworzącej dokument
-       - numer NR4C
-       - numer rewizji, który zmienia się przy każdym opublikowaniu
-         zmodyfikowanej wersji; w przypadku "niestabilnych" rewizji powinno
-         dopisywać się przy jej numerze skrót "UC" oznaczający "Under
-         Construction", a w przypadku rewizji stabilnych z pewnymi poprawkami,
-         ale jeszcze bez nowego numeru rewizji powinno dopisywać się znak "+"
-       - numery dokumentów NR4C, które dokument unieważnia
-       - numery dokumentów NR4C, które dokument aktualizuje/uzupełnia
-   b) po prawej stronie:
-       - autorzy
-       - data w formacie "j F Y" (http://php.net/manual/en/function.date.php)
-   c) na środku: pełny tytuł dokumentu
-
-
-3.2 Nagłówek rozpoczynający zwykłą stronę
-
-   a) po lewej stronie: numer NR4C
-   b) na środku: krótka nazwa dokumentu
-   c) po prawej stronie: data w formacie "Y-m-d"
-
-
-3.3 Stopka
-
-   a) po lewej stronie: nazwiska/pseudonimy autorów
-   b) na środku: nazwę organizacji tworzącej dokument
-   c) po prawej stronie: numer strony
-
-
-4 Ogólna konstrukcja dokumentu
-
-   W przypadku problemów, co do interpretacji proszę spojrzeć na budowę tego
-   dokumentu. Ten dokument zawiera także przykładowe strony, na których można
-   zobaczyć ile rzeczywiście miejsca jest do wykorzystania. Te przykładowe
-   strony można także użyć do testowania druku dokumentów w tym standardzie.
-
-   Zazwyczaj zaraz pod pierwszym nagłówkiem powinny znaleźć się następujące
-   sekcje, które nie zaliczają się do numeracji rozdziałów:
-
-   a) Status of this Memo
-       opisuje typ NR4C: czy jest to tylko zapytanie, czy definicja standardu
-   b) Copyright Notice
-       definiuje między innymi licencję, pod którą udostępniamy NR4C; TRZEBA
-       tutaj zamieścić informację o zgodzie na opublikowanie w repozytorium
-       Nircek/NR4C
-   c) Abstract
-       informuje o zawartości i przyczynach napisania danego dokumentu
-   d) Table of Contents
-       spis treści, czyli rozdziałów i podrozdziałów
-
-   Po tych czterech sekcjach możemy przejść już do głównej zawartości w postaci
-   rozdziałów, które opisują daną część, a jeżeli są one dłuższe, możemy
-   podzielić je na podrozdziały.
-
-   Ostatni rozdział powinien zawierać informacje kontaktowe do autorów
-   dokumentu, zaleca się wstawić tam odcisk klucza PGP oraz adres e-mail.
-
-
-5 System numerów NR4C
-
-   Żeby nie pozwolić na duplikowanie się numerów NR4C przed rozpoczęciem
-   pisania dokumentu na dany temat powinno wysłać się wiadomość do Nircek'a z
-   planowanym tytułem dokumentu oraz autorami. W odpowiedzi, jeżeli propozycja
-   zostanie zaakceptowana zostanie wysłany zarezerwowany numer NR4C.
-
-   Zarezerwowane numery NR4C będą także dostępne do widoku publicznego w
-   repozytorium Nircek/NR4C w pliku 'README.md'.
-
-   Finalne rewizje poszczególnych dokumentów będą się znajdowały w repozytorium
-   Nircek/NR4C na GitHubie w gałęzi master. Będzie tam także plik z listą
-   aktualnie zarezerwowanych numerów NR4C.
-
-   Jeżeli autorzy dokumentu o zarezerwowanym numerze NR4C chcieliby go
-   opublikować to zaleca się sforkowanie podanego wyżej repozytorium,
-   wprowadzenie swojego dokumentu i wykonanie pull request'a. Jest także
-   alternatywna opcja: można wysłać maila do Nircek'a z prośbą o opublikowanie,
-   ale jest to niezalecane.
-
-
-]                                                                              [
-]                                                                              [
-]  Nircek                      NR4C Working Group                    [Page 2]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-10-01  [
-]                                                                              [
-]                                                                              [
-   Jeżeli ktokolwiek chciałby zweryfikować poprawność dokumentu może napisać
-   maila do autorów dokumentu z zapytaniem o poszczególną część.
-
-
-6 Rewizje
-
-   W przypadku znalezienia błędów lub po dyskusji odbytej w sprawie danego
-   dokumentu autorzy mogą stworzyć kolejną jego rewizje. Powoduje to, że
-   kolejne rewizje mogą się od siebie znacznie różnić, co może powodować
-   kolizje w implementacjach standardu, dlatego wszystkie implementacje powinny
-   mieć oznaczenia wg której wersji dokumentu zostały wykonane w tym formacie:
-
-                                  NR4C-%nrev%r                                  
-
-   gdzie %n oznacza numer NR4C, a %r - numer rewizji.
-   Numery rewizji powinny być numerowane od 1. W przypadku rewizji o numerze 0+
-   oznacza to, że rewizja jest niestabilna.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-]                                                                              [
-]                                                                              [
-]  Nircek                      NR4C Working Group                    [Page 3]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-10-01  [
-]                                                                              [
-]                                                                              [
-
-7 Autorzy
-
-                      Nircek <nircek-2103@protonmail.com>                       
-               93F9 9DE4 C1D2 7DB2 64ED  91BD 38A9 2C1A 795C 48A2               
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-]                                                                              [
-]                                                                              [
-]  Nircek                      NR4C Working Group                    [Page 4]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-10-01  [
-]  NR4C-<nr>rev<revision nr>  <short name of NR4C>               <yyyy-mm-dd>  [
-]  Pierwsza przykładowa strona                                                 [
+/p"Trzymanie się powyższych ustawień jest potrzebne do prostego drukowania NR4C.
+
+/s"Miejsce
+
+/p"Jedna strona, która mieści się na połowie strony A4 (w pionie) ma 80 znaków szerokości i 110 znaków wysokości. KAŻDY nagłówek i KAŻDA stopka powinna mieć minimum 3 linie wysokości. Jeżeli ten warunek będzie spełniony to maksymalnie można mieć 104 linie na zawartość strony.
+
+/s"|Informacje w nagłówku i stopce%nl
+//"(wypisywane od góry)
+
+# sUbsection
+/u"Pierwszy nagłówek
+
+/p"Jest to ten, który znajduje się na stronie tytułowej. Na samej górze może znajdować się tytuł dokumentu przedstawiony w postaci ASCII art'a.
+
+/p:
+# a - lista od a
+/a:"po lewej stronie:
+/-"nazwa organizacji tworzącej dokument
+/-"numer NR4C
+/-"numer rewizji, który zmienia się przy każdym opublikowaniu zmodyfikowanej wersji; w przypadku "niestabilnych" rewizji powinno dopisywać się przy jej numerze skrót "UC" oznaczający "Under Construction", a w przypadku rewizji stabilnych z pewnymi poprawkami, ale jeszcze bez nowego numeru rewizji powinno dopisywać się znak "+"
+/-"numery dokumentów NR4C, które dokument unieważnia
+/-"numery dokumentów NR4C, które dokument aktualizuje/uzupełnia
+/eba:
+/"po prawej stronie:
+/-"autorzy
+/-"data w formacie "j F Y" (http://php.net/manual/en/function.date.php)
+/ea"na środku: pełny tytuł dokumentu
+/e
+
+/u"Nagłówek rozpoczynający zwykłą stronę
+
+/p:
+/a"po lewej stronie: numer NR4C
+/a"na środku: krótka nazwa dokumentu
+/a"po prawej stronie: data w formacie "Y-m-d"
+/e
+
+/u"Stopka
+
+/p:
+/a"po lewej stronie: nazwiska/pseudonimy autorów
+/a"na środku: nazwę organizacji tworzącej dokument
+/a"po prawej stronie: numer strony
+/e
+
+/s"Ogólna konstrukcja dokumentu
+
+/p"W przypadku problemów, co do interpretacji proszę spojrzeć na budowę tego dokumentu. Ten dokument zawiera także przykładowe strony, na których można zobaczyć ile rzeczywiście miejsca jest do wykorzystania. Te przykładowe strony można także użyć do testowania druku dokumentów w tym standardzie.
+
+/p"Zazwyczaj zaraz pod pierwszym nagłówkiem powinny znaleźć się następujące sekcje, które nie zaliczają się do numeracji rozdziałów:
+
+/p:
+/a"S|tatus of this Memo
+//"opisuje typ NR4C: czy jest to tylko zapytanie, czy definicja standardu
+/a"C|opyright Notice
+//"definiuje między innymi licencję, pod którą udostępniamy NR4C; TRZEBA tutaj zamieścić informację o zgodzie na opublikowanie w repozytorium Nircek/NR4C
+/a"A|bstract
+//"informuje o zawartości i przyczynach napisania danego dokumentu
+/a"T|able of Contents
+//"spis treści, czyli rozdziałów i podrozdziałów
+/e
+
+/p"Po tych czterech sekcjach możemy przejść już do głównej zawartości w postaci rozdziałów, które opisują daną część, a jeżeli są one dłuższe, możemy podzielić je na podrozdziały.
+
+/p"Ostatni rozdział powinien zawierać informacje kontaktowe do autorów dokumentu, zaleca się wstawić tam odcisk klucza PGP oraz adres e-mail.
+
+/s"System numerów NR4C
+
+/p"Żeby nie pozwolić na duplikowanie się numerów NR4C przed rozpoczęciem pisania dokumentu na dany temat powinno wysłać się wiadomość do Nircek'a z planowanym tytułem dokumentu oraz autorami. W odpowiedzi, jeżeli propozycja zostanie zaakceptowana zostanie wysłany zarezerwowany numer NR4C.
+
+/p"Zarezerwowane numery NR4C będą także dostępne do widoku publicznego w repozytorium Nircek/NR4C w pliku 'README.md'.
+
+/p"Finalne rewizje poszczególnych dokumentów będą się znajdowały w repozytorium Nircek/NR4C na GitHubie w gałęzi master. Będzie tam także plik z listą aktualnie zarezerwowanych numerów NR4C.
+
+/p"Jeżeli autorzy dokumentu o zarezerwowanym numerze NR4C chcieliby go opublikować to zaleca się sforkowanie podanego wyżej repozytorium, wprowadzenie swojego dokumentu i wykonanie pull request'a. Jest także alternatywna opcja: można wysłać maila do Nircek'a z prośbą o opublikowanie, ale jest to niezalecane.
+
+/p"Jeżeli ktokolwiek chciałby zweryfikować poprawność dokumentu może napisać maila do autorów dokumentu z zapytaniem o poszczególną część.
+
+/s"Rewizje
+
+/p"W przypadku znalezienia błędów lub po dyskusji odbytej w sprawie danego dokumentu autorzy mogą stworzyć kolejną jego rewizje. Powoduje to, że kolejne rewizje mogą się od siebie znacznie różnić, co może powodować kolizje w implementacjach standardu, dlatego wszystkie implementacje powinny mieć oznaczenia wg której wersji dokumentu zostały wykonane w tym formacie:
+
+/c"NR4C-%%nrev%%r
+/.
+
+/p"gdzie %%n oznacza numer NR4C, a %%r - numer rewizji.
+/p"Numery rewizji powinny być numerowane od 1. W przypadku rewizji o numerze 0+ oznacza to, że rewizja jest niestabilna.
+/n
+/s"Autorzy
+
+/c:
+/"Nircek <nircek-2103@protonmail.com>
+/."93F9 9DE4 C1D2 7DB2 64ED  91BD 38A9 2C1A 795C 48A2
+/.
+/e
+/n
+/%t"Pierwsza przykładowa strona
+/h:
+/l"]  NR4C-%nrev%r
+/c"%s
+/r"%d  [
+/.l"]  NR4C-<nr>rev<revision nr>
+/c"<short name of NR4C>
+/r"<yyyy-mm-dd>  [
+/.l"]  %t
+/r"[
+/.e
+/f:
+/l"]
+/r"[
+/.l"]  <author>
+/c"<name of organization>
+/r"[Page <nr>]  [
+/.l"]  Nircek
+/c"%g
+# %p = numer strony
+/r"[Page %p]  [
+/.e
+/t"%t%nl
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 2        1         2         3         4         5         6         7         8
 3                                                                              3
@@ -545,12 +334,6 @@ Table of Contents
 2                                                                              2
 3        1         2         3         4         5         6         7         8
 42345678901234567890123456789012345678901234567890123456789012345678901234567890
-]                                                                              [
-]  <author>                  <name of organization>               [Page <nr>]  [
-]  Nircek                      NR4C Working Group                    [Page 5]  [
-]  NR4C-0rev3 UC            NR4C Standard Definition               2018-10-01  [
-]  NR4C-<nr>rev<revision nr>  <short name of NR4C>               <yyyy-mm-dd>  [
-]  Druga przykładowa strona                                                    [
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 2        1         2         3         4         5         6         7         8
 3                                                                              3
@@ -654,7 +437,6 @@ Table of Contents
 1                                                                              1
 2                                                                              2
 3        1         2         3         4         5         6         7         8
+/%t"Druga przykładowa strona
+/t"%t%nl
 42345678901234567890123456789012345678901234567890123456789012345678901234567890
-]                                                                              [
-]  <author>                  <name of organization>               [Page <nr>]  [
-]  Nircek                      NR4C Working Group                    [Page 6]  [
