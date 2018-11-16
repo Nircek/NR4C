@@ -1,0 +1,190 @@
+/%g"SZ ŚI Working Group
+/%s"Założenia układu ŚI
+/%n"SZ11
+/h:
+/l"] %n
+/c"%s
+/r"%d [
+/.l"]
+/r"[
+/.l"]
+/r"[
+/.
+/e
+/f:
+/l"]
+/r"[
+/.l"]
+/r"[
+/.l"] Nircek
+/c"%g
+# %p = numer strony
+/r"[Page %p] [
+/.
+/e
+/l"%g
+/r"Nircek
+/.l"SZ Request for Comments %n
+/r"April 2018
+/."Updates: SZ12
+
+/c"%s
+/.
+
+Status of this Memo
+
+/p"This memo provides information for the local community. It does not specify an local standard of any kind. Distribution of this memo is very limited.
+
+Copyright Notice
+
+/p:
+/l"Copyright (c) 2018 Nircek
+/r"ALL RIGHTS RESERVED!!!
+/.
+
+/"Ten dokument został stworzony tylko i wyłącznie dla użytku prywatnego, nie miał na celu nikogo urazić, ani zaprzeczyć jakiekolwiek globalnie ustalone prawa, zależności itp. Nie ma także nic wspólnego z oryginalnym RFC oraz z The Internet Society. Nie należy brać tego dokumentu jako naukowo potwierdzonego. Nie pozwalam na używanie tego dokumentu w żadnej innej formie, ani gdziekolwiek indziej tam, gdzie nie wyraziłem zgody. Wszystkie prawa zastrzeżone przeze mnie, czyli przez użytkownika internetu podającego się pod pseudonimem Nircek.
+
+/"This document was created only for private use, wished to offend no one and not deny any globally determined laws, dependencies, etc. There is also nothing to do with the original RFC and The Internet Society. Do not take this document for scientifically proven. I do not allow the use of this document in any other form or anywhere else where I have not agreed. All rights reserved by me, in other words, by the internet user under nickname Nircek.
+/e
+
+Abstract
+
+/p"Ten dokument definiuje podstawowe założenia i jednostki używane w ramach układu ŚI.
+
+Table od Contents
+/o
+
+/s"Oznaczenia
+
+/p"By uniknąć dwuznaczności poszczególnych wzorów, należy stosować poniższe oznaczenia.
+ 
+/u"Oznaczenia dla dróg
+
+/p:
+/a"sx - droga danego obiektu w przestrzennym wymiarze 'x'
+/a"sy - droga danego obiektu w przestrzennym wymiarze 'y'
+/a"sz - droga danego obiektu w przestrzennym wymiarze 'z'
+/a"sa - droga danego obiektu w urojonym wymiarze 'a'
+/a"st - |droga danego obiektu w czasowym wymiarze 't'
+//"ilość czasu, który minął według denego obserwatora
+//"tl
+/a"sc - przebyta droga przez dany obiekt w urojonym wymiarze 'c'
+/e
+
+/u"Oznaczenia szybkości
+
+/p:
+/a"vx - szybkość danego obiektu w przestrzennym wymiarze 'x'
+/a"vy - szybkość danego obiektu w przestrzennym wymiarze 'y'
+/a"vz - szybkość danego obiektu w przestrzennym wymiarze 'z'
+/a"va - szybkość danego obiektu w urojonym wymiarze 'a'
+/a"vt - |szybkość danego obiektu w czasowym wymiarze 't'
+//"szybkość czasu według danego obserwatora względem tg
+/a"vc - szybkość danego obiektu w urojonym wymiarze 'c'
+/e
+
+/u"Oznaczenia czasu
+
+/p:
+/a"tl - |czas lokalny
+//"czas dla danego obserwatora
+/a"t; tg - |czas globalny
+//"czas dla układu odniesienia, domyślnie jest to obserwator, którego va = 0, a vt = 1 hUl
+/e
+
+/u"Pozostałe
+
+/p:
+/a"γ - |współczynnik dylatacji czasu
+//"odwrotność szybkości czasu
+//"tempo czasu
+//"[sG/sL]
+/e
+
+/u"Suma pitagorejska
+
+/p"W związku z częstym powtarzaniem się obliczeń z użyciem pierwiastka sumy kwadratów liczb, które jest przekształconym twierdzeniem Pitagorasa, postanowiłem zdefiniować sumę pitagorejską, która skracała by ten zapis:
+/p"[arg1; arg2; ...; argn] = √( arg1² + arg2² + ... + argn² )
+
+/u"Uwagi
+
+/a"OZNACZEŃ 'tl' I 'tg' RACZEJ UŻYWA SIĘ DLA SŁOWNYCH WYPOWIEDZI, A OZNACZEŃ 'st' I 't' W OBLICZENIACH.
+
+/a"W pisemnym zapisie powyższych jednostek druga litera powinna być w indeksie dolnym.
+
+/s"Jednostki
+
+/p:
+/a"metr (m) - |jednostka długości/drogi w przestrzeni z układu SI
+//"(używana w sx, sy, sz, sa)
+
+/a"sekunda (s) - |jednostka czasu z układu SI
+//"jednostka długości w czasie
+//"(używana w st, t)
+
+/a"sekunda lokalna (sL) - |jednostka długości w czasie
+//"(używana w st)
+
+/a"sekunda globalna (sG) - |jednostka czasu odpowiadająca sekundzie
+//"(używana w t)
+
+/a"metr na sekundę (m/s) - |jednostka szybkości w przestrzeni
+//"(używana w vx, vy, vz, va)
+
+/a"ulam (Ul) - |jednostka szybkości w czasie, 0,01 hektoulama
+//""Gdy czas nie płynie (ciało porusza się z prędkością światła), jego szybkość to 0 ulamów, natomiast gdy ciało jest w całkowitym spoczynku, to czas płynie z szybkością 100 ulamów"
+//"(używana w vt)
+
+/a"hektoUlam (hUl) - |jednostka szybkości w czasie, 100 ulamów
+//""1 hektoulam to 1 sekunda czasu lokalnego na 1 sekundę czasu globalnego"
+//"(używana w vt)
+
+/a"sekunda lokalna na globalną (sL/sG) - |jednostka szybkości czasu
+//"(używana w vt)
+ 
+/a"sekunda globalna na lokalną (sG/sL) - |jednostka tempa czasu
+//"(używana w γ)
+
+/a"zeppelin (Zp) - |jednostka długości w czasoprzestrzeni
+//:
+/""1 Zp odpowiada:
+/a"w osi czasu: jednej sekundzie długości
+/"[1Zp ≡ 1s]
+/a"w osiach przestrzeni: odległości jaką pokonuje światło w ciągu jednej sekundy
+/"[1Zp ≡ c * 1s ≈ 299 792 458 m]
+/a"w pozostałych: pierwiastkowi z sumy kwadratów odległości w trzech kolejnych wymiarach przestrzeni i czwartego wymiaru czasu, odpowiadającemu 1 Zp w przypadkach a) i b) [1 Zp ≡ √( sx² + sy² + sz² + st²)]"
+/"(używana w sx, sy, sz, sa, st, sc)
+/e
+/e
+ 
+/s"Przestrzeń
+
+/p"Na przestrzeń składają się 3 wymiary: 'x', 'y', 'z'. Trzeba zdefiniować tutaj także jeden urojony wymiar sumujący 'a', który astępuje wszystkie poprzednie wymiary. Jest on potrzebny do wykresów przestrzeni względem czasu. Zakładając ruch prostoliniowy danego obiektu i znając przebyte przez niego drogi w poszczególnych wymiarach jesteśmy w stanie policzyć wartość drogi przebytej w wymiarze 'a' za pomocą sumy pitagorejskiej:
+ 
+/p"sa = [sx; sy; sz]
+ 
+/p"Domyślną jednostką długości używaną w przestrzeni jest metr (m).
+/p"Domyślną jednostką szybkości używaną w przestrzeni jest metr na sekundę (m/s).
+
+/s"Wymiar czasu
+
+/p"Wymiar czasu to wymiar 't'.
+ 
+/p"Domyślną jednostką długości używaną w wymiarze czasu jest sekunda (s), ale jeżeli chcemy podkreślić, że jest to jednostka długości, a nie czasu możemy użyć sekund lokalnych (sL). Domyślną jednostką szybkości używaną w wymiarze czasu jest hektoUlam (hUl).
+
+/s"Czasoprzestrzeń
+
+/p"Na czasoprzestrzeń składają się 4 wymiary: 3 przestrzeni ('x', 'y', 'z') oraz 1 czasu ('t'). Jeżeli chcemy wyliczyć zależności pomiędzy tymi dwiema częściami, możemy posłużyć się urojonym wymiarem 'a' zamiast wymiarów przestrzennych. Jest tutaj także zdefiniowany urojony wymiar sumujący 'c'. Zakładając ruch prostoliniowy danego obiektu i znając przebyte przez niego drogi w poszczególnych częściach jesteśmy w stanie policzyć wartość drogi przebytej w wymiarze 'c' za pomocą sumy pitagorejskiej:
+
+/p"sc = [sa; st] = [sx; sy; sz; st]
+
+/p"Ze względu na kolidowanie się jednostek w częściach składowych czasoprzestrzeni, należało zdefiniować nową, uniwersalną dla obu części jednostkę zeppelina, która w części przestrzennej odpowiada odległości jaką pokonuje światło w czasie jednej sekundy, a w części czasowej odpowiada 1 sekundzie.
+	
+/p"Domyślną jednostką długości używaną w czasoprzestrzeni jest zeppelin (Zp).
+/p"Domyślną jednostką szybkości używaną w czasoprzestrzeni jest zeppelin na sekundę (Zp/s).
+
+/s"Czas
+
+/p"Czas to wymiar czasu dla układu odniesienia.
+
+/p"Domyślną jednostką czasu jest sekunda (s), ale jeżeli chcemy podkreślić, że jest to jednostka czasu, a nie długości w wymiarze czasu możemy użyć sekund globalnych (sG).
