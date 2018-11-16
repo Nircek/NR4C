@@ -1,13 +1,15 @@
 SZ ŚI Working Group                                                       Nircek
-SZ Request for Comments SZ11                                          April 2018
+SZ Request for Comments 13                                      16 November 2018
 Updates: SZ12
 
                               Założenia układu ŚI                               
+
 
 Status of this Memo
 
    This memo provides information for the local community. It does not specify
    an local standard of any kind. Distribution of this memo is very limited.
+
 
 Copyright Notice
 
@@ -16,19 +18,23 @@ Copyright Notice
    Ten dokument został stworzony tylko i wyłącznie dla użytku prywatnego, nie
    miał na celu nikogo urazić, ani zaprzeczyć jakiekolwiek globalnie ustalone
    prawa, zależności itp. Nie ma także nic wspólnego z oryginalnym RFC oraz z
-   The Internet Society. Nie należy brać tego dokumentu jako naukowo
+   Internet Engineering Task Force. Nie należy brać tego dokumentu jako naukowo
    potwierdzonego. Nie pozwalam na używanie tego dokumentu w żadnej innej
    formie, ani gdziekolwiek indziej tam, gdzie nie wyraziłem zgody. Wszystkie
    prawa zastrzeżone przeze mnie, czyli przez użytkownika internetu podającego
    się pod pseudonimem Nircek.
 
-   This document was created only for private use, wished to offend no one and
-   not deny any globally determined laws, dependencies, etc. There is also
-   nothing to do with the original RFC and The Internet Society. Do not take
-   this document for scientifically proven. I do not allow the use of this
-   document in any other form or anywhere else where I have not agreed. All
-   rights reserved by me, in other words, by the internet user under nickname
-   Nircek.
+   This document was created only for private use. The purpose of this document
+   is not to offend anyone or deny any globally determined laws, dependencies,
+   etc. There is also nothing to do with the original RFC and Internet
+   Engineering Task Force. Do not take this document as scientifically proven.
+   I do not allow the use of this document in any other form or anywhere else
+   where I have not agreed. All rights reserved by me, in other words, by the
+   internet user under nickname Nircek.
+
+   Zezwalam na opublikowanie tego dokumentu w repozytorium Nircek/NR4C w
+   serwisie GitHub.
+
 
 Abstract
 
@@ -36,13 +42,14 @@ Abstract
    układu ŚI.
 
 Table od Contents
+
    1.   Oznaczenia ............................................................1
      1    Oznaczenia dla dróg .................................................1
      2    Oznaczenia szybkości ................................................1
      3    Oznaczenia czasu ....................................................1
      4    Pozostałe ...........................................................1
      5    Suma pitagorejska ...................................................1
-     6    Uwagi ...............................................................1
+     6    Uwagi ...............................................................2
    2.   Jednostki .............................................................2
    3.   Przestrzeń ............................................................2
    4.   Wymiar czasu ..........................................................2
@@ -96,6 +103,18 @@ Table od Contents
           [sG/sL]
 
 
+
+
+
+
+
+
+Nircek                        SZ ŚI Working Group                       [Page 1]
+SZ13                          Założenia układu ŚI                     2018-11-16
+
+
+
+
 1.5 Suma pitagorejska
 
    W związku z częstym powtarzaniem się obliczeń z użyciem pierwiastka sumy
@@ -104,20 +123,12 @@ Table od Contents
    [arg1; arg2; ...; argn] = √( arg1² + arg2² + ... + argn² )
 
 
-
-]                                                                              [
-]                                                                              [
-] Nircek                      SZ ŚI Working Group                     [Page 1] [
-] SZ11                        Założenia układu ŚI                   2018-06-28 [
-]                                                                              [
-]                                                                              [
 1.6 Uwagi
 
-a) OZNACZEŃ 'tl' I 'tg' RACZEJ UŻYWA SIĘ DLA SŁOWNYCH WYPOWIEDZI, A OZNACZEŃ
-   'st' I 't' W OBLICZENIACH.
-
-b) W pisemnym zapisie powyższych jednostek druga litera powinna być w indeksie
-   dolnym.
+   a) OZNACZEŃ 'tl' I 'tg' RACZEJ UŻYWA SIĘ DLA SŁOWNYCH WYPOWIEDZI, A OZNACZEŃ
+      'st' I 't' W OBLICZENIACH.
+   b) W pisemnym zapisie powyższych jednostek druga litera powinna być w
+      indeksie dolnym.
 
 
 2 Jednostki
@@ -157,17 +168,18 @@ b) W pisemnym zapisie powyższych jednostek druga litera powinna być w indeksie
                                             (używana w γ)
 
    j) zeppelin (Zp) - jednostka długości w czasoprzestrzeni
-   "1 Zp odpowiada:
-   a) w osi czasu: jednej sekundzie długości
-   [1Zp ≡ 1s]
-   b) w osiach przestrzeni: odległości jaką pokonuje światło w ciągu jednej
-      sekundy
-   [1Zp ≡ c * 1s ≈ 299 792 458 m]
-   c) w pozostałych: pierwiastkowi z sumy kwadratów odległości w trzech
-      kolejnych wymiarach przestrzeni i czwartego wymiaru czasu,
-      odpowiadającemu 1 Zp w przypadkach a) i b) [1 Zp ≡ √( sx² + sy² + sz² +
-      st²)]"
-   (używana w sx, sy, sz, sa, st, sc)
+                      "1 Zp odpowiada:
+                      a) w osi czasu: jednej sekundzie długości
+                      [1Zp ≡ 1s]
+                      b) w osiach przestrzeni: odległości jaką pokonuje światło
+                      w ciągu jednej sekundy w próżni
+                      [1Zp ≡ c * 1s ≈ 299 792 458 m]
+                      c) w pozostałych: pierwiastkowi z sumy kwadratów
+                      odległości w trzech kolejnych wymiarach przestrzeni i
+                      czwartego wymiaru czasu, odpowiadającemu 1 Zp w
+                      przypadkach a) i b)
+                      [1 Zp ≡ √( sx² + sy² + sz² + st²)]"
+                      (używana w sx, sy, sz, sa, st, sc)
  
 
 3 Przestrzeń
@@ -208,6 +220,15 @@ b) W pisemnym zapisie powyższych jednostek druga litera powinna być w indeksie
 
    sc = [sa; st] = [sx; sy; sz; st]
 
+
+
+
+Nircek                        SZ ŚI Working Group                       [Page 2]
+SZ13                          Założenia układu ŚI                     2018-11-16
+
+
+
+
    Ze względu na kolidowanie się jednostek w częściach składowych
    czasoprzestrzeni, należało zdefiniować nową, uniwersalną dla obu części
    jednostkę zeppelina, która w części przestrzennej odpowiada odległości jaką
@@ -215,12 +236,6 @@ b) W pisemnym zapisie powyższych jednostek druga litera powinna być w indeksie
    sekundzie.
 	
    Domyślną jednostką długości używaną w czasoprzestrzeni jest zeppelin (Zp).
-]                                                                              [
-]                                                                              [
-] Nircek                      SZ ŚI Working Group                     [Page 2] [
-] SZ11                        Założenia układu ŚI                   2018-06-28 [
-]                                                                              [
-]                                                                              [
    Domyślną jednostką szybkości używaną w czasoprzestrzeni jest zeppelin na
    sekundę (Zp/s).
 
@@ -322,9 +337,4 @@ b) W pisemnym zapisie powyższych jednostek druga litera powinna być w indeksie
 
 
 
-
-
-
-]                                                                              [
-]                                                                              [
-] Nircek                      SZ ŚI Working Group                     [Page 3] [
+Nircek                        SZ ŚI Working Group                       [Page 3]
