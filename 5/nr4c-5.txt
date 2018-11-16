@@ -181,7 +181,7 @@ Table od Contents
 3 Przestrzeń
 
    Na przestrzeń składają się 3 wymiary: 'x', 'y', 'z'. Trzeba zdefiniować
-   tutaj także jeden urojony wymiar sumujący 'a', który astępuje wszystkie
+   tutaj także jeden urojony wymiar sumujący 'a', który zastępuje wszystkie
    poprzednie wymiary. Jest on potrzebny do wykresów przestrzeni względem
    czasu. Zakładając ruch prostoliniowy danego obiektu i znając przebyte przez
    niego drogi w poszczególnych wymiarach jesteśmy w stanie policzyć wartość

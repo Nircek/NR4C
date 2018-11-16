@@ -160,7 +160,7 @@
  
 /s"Przestrzeń
 
-/p"Na przestrzeń składają się 3 wymiary: 'x', 'y', 'z'. Trzeba zdefiniować tutaj także jeden urojony wymiar sumujący 'a', który astępuje wszystkie poprzednie wymiary. Jest on potrzebny do wykresów przestrzeni względem czasu. Zakładając ruch prostoliniowy danego obiektu i znając przebyte przez niego drogi w poszczególnych wymiarach jesteśmy w stanie policzyć wartość drogi przebytej w wymiarze 'a' za pomocą sumy pitagorejskiej:
+/p"Na przestrzeń składają się 3 wymiary: 'x', 'y', 'z'. Trzeba zdefiniować tutaj także jeden urojony wymiar sumujący 'a', który zastępuje wszystkie poprzednie wymiary. Jest on potrzebny do wykresów przestrzeni względem czasu. Zakładając ruch prostoliniowy danego obiektu i znając przebyte przez niego drogi w poszczególnych wymiarach jesteśmy w stanie policzyć wartość drogi przebytej w wymiarze 'a' za pomocą sumy pitagorejskiej:
  
 /p"sa = [sx; sy; sz]
  
