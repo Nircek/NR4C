@@ -1,5 +1,5 @@
 ]  SZ ŚI Working Group                                                 Nircek  [
-]  Nircek's Request 4 Comments: 5                            16 November 2018  [
+]  Nircek's Request 4 Comments: 5                            17 November 2018  [
 ]  Revision: 0+                                                                [
 
                               Założenia układu ŚI                               
@@ -71,7 +71,7 @@ Table od Contents
    c) sz - droga danego obiektu w przestrzennym wymiarze 'z'
    d) sa - droga danego obiektu w urojonym wymiarze 'a'
    e) st - droga danego obiektu w czasowym wymiarze 't'
-           ilość czasu, który minął według denego obserwatora
+           ilość czasu, który minął według danego obserwatora
            tl
    f) sc - przebyta droga przez dany obiekt w urojonym wymiarze 'c'
 
@@ -108,7 +108,7 @@ Table od Contents
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                     SZ ŚI Working Group                    [Page 1]  [
-]  NR4C-5rev0+                Założenia układu ŚI                  2018-11-16  [
+]  NR4C-5rev0+                Założenia układu ŚI                  2018-11-17  [
 ]                                                                              [
 ]                                                                              [
 1.5 Suma pitagorejska
@@ -218,7 +218,7 @@ Table od Contents
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                     SZ ŚI Working Group                    [Page 2]  [
-]  NR4C-5rev0+                Założenia układu ŚI                  2018-11-16  [
+]  NR4C-5rev0+                Założenia układu ŚI                  2018-11-17  [
 ]                                                                              [
 ]                                                                              [
 
