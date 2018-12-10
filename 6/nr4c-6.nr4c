@@ -1,0 +1,57 @@
+/%g"Zayebeast Corporation
+/%s"Algorytm szyfrujący CRY
+/%n"6
+/%r"0+
+/h:
+/l"]  NR4C-%nrev%r
+/c"%s
+/r"%d  [
+/.l"]
+/r"[
+/.l"]
+/r"[
+/.e
+/f:
+/l"]
+/r"[
+/.l"]
+/r"[
+/.l"]  Nircek
+/c"%g
+/r"[Page %p]  [
+/.e
+/l"]  %g
+/r"Nircek  [
+/.l"]  Nircek's Request 4 Comments: %n
+/r"%D  [
+/.l"]  Revision: %r
+/r"[
+/.
+
+/c"%s
+/.
+
+/k"Status of this Memo
+
+/p"This document specifies a definition of algorithm CRY for the local community and requests discussions and suggestions for improvements. Distribution of this memo is very limited.
+
+/k"Copyright Notice
+
+/pl"Copyright (c) 2018 Nircek
+/r"ALL RIGHTS RESERVED!!!
+/.
+
+/p"Ten dokument został stworzony tylko i wyłącznie dla użytku prywatnego, nie miał na celu nikogo urazić, ani zaprzeczyć jakiekolwiek globalnie ustalone prawa, zależności itp. Nie ma także nic wspólnego z oryginalnym RFC oraz z Internet Engineering Task Force. Nie należy brać tego dokumentu jako naukowo potwierdzonego. Nie pozwalam na używanie tego dokumentu w żadnej innej formie, ani gdziekolwiek indziej tam, gdzie nie wyraziłem zgody. Wszystkie prawa zastrzeżone przeze mnie, czyli przez użytkownika internetu podającego się pod pseudonimem Nircek.
+
+/p"This document was created only for private use. The purpose of this document is not to offend anyone or deny any globally determined laws, dependencies, etc. There is also nothing to do with the original RFC and Internet Engineering Task Force. Do not take this document as scientifically proven. I do not allow the use of this document in any other form or anywhere else where I have not agreed. All rights reserved by me, in other words, by the internet user under nickname Nircek.
+
+/p"Zezwalam na opublikowanie tego dokumentu w repozytorium Nircek/NR4C w serwisie GitHub.
+
+/k"Abstract
+
+/p"Ten dokument definiuje alogrytm szyfrujący CRY. Wymyślony i zaimplementowany w Pythonie przez Nirceka przed 2018-10-03T19:25+02:00.
+
+/k"Table od Contents
+/o
+
+

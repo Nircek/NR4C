@@ -1,0 +1,110 @@
+]  Zayebeast Corporation                                               Nircek  [
+]  Nircek's Request 4 Comments: 6                            10 December 2018  [
+]  Revision: 0+                                                                [
+
+                            Algorytm szyfrujący CRY                             
+
+
+Status of this Memo
+
+   This document specifies a definition of algorithm CRY for the local
+   community and requests discussions and suggestions for improvements.
+   Distribution of this memo is very limited.
+
+
+Copyright Notice
+
+   Copyright (c) 2018 Nircek                              ALL RIGHTS RESERVED!!!
+
+   Ten dokument został stworzony tylko i wyłącznie dla użytku prywatnego, nie
+   miał na celu nikogo urazić, ani zaprzeczyć jakiekolwiek globalnie ustalone
+   prawa, zależności itp. Nie ma także nic wspólnego z oryginalnym RFC oraz z
+   Internet Engineering Task Force. Nie należy brać tego dokumentu jako naukowo
+   potwierdzonego. Nie pozwalam na używanie tego dokumentu w żadnej innej
+   formie, ani gdziekolwiek indziej tam, gdzie nie wyraziłem zgody. Wszystkie
+   prawa zastrzeżone przeze mnie, czyli przez użytkownika internetu podającego
+   się pod pseudonimem Nircek.
+
+   This document was created only for private use. The purpose of this document
+   is not to offend anyone or deny any globally determined laws, dependencies,
+   etc. There is also nothing to do with the original RFC and Internet
+   Engineering Task Force. Do not take this document as scientifically proven.
+   I do not allow the use of this document in any other form or anywhere else
+   where I have not agreed. All rights reserved by me, in other words, by the
+   internet user under nickname Nircek.
+
+   Zezwalam na opublikowanie tego dokumentu w repozytorium Nircek/NR4C w
+   serwisie GitHub.
+
+
+Abstract
+
+   Ten dokument definiuje alogrytm szyfrujący CRY. Wymyślony i zaimplementowany
+   w Pythonie przez Nirceka przed 2018-10-03T19:25+02:00.
+
+Table od Contents
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]                                                                              [
+]                                                                              [
+]  Nircek                    Zayebeast Corporation                   [Page 1]  [
