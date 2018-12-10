@@ -1,6 +1,6 @@
 ]  Zayebeast Corporation                                               Nircek  [
 ]  Nircek's Request 4 Comments: 6                            10 December 2018  [
-]  Revision: 0+                                                                [
+]  Revision: 1                                                                 [
 
                             Algorytm szyfrujący CRY                             
 
@@ -40,71 +40,181 @@ Copyright Notice
 Abstract
 
    Ten dokument definiuje alogrytm szyfrujący CRY. Wymyślony i zaimplementowany
-   w Pythonie przez Nirceka przed 2018-10-03T19:25+02:00.
+   w Pythonie przez Nirceka przed 2018-10-03T19:25+02:00
+   (https://gist.github.com/Nircek/f5619f52c85a17453ca83b7884f2be73).
 
 Table od Contents
 
+   1.   Etymologia ............................................................1
+   2.   Zastosowanie ..........................................................1
+   3.   Zasada działania ......................................................1
+   4.   Pseudokod .............................................................1
+   5.   Przykładowa implementacja w Pythonie: .................................2
+   6.   Przykłady .............................................................2
+   7.   Autorzy ...............................................................2
 
 
+1 Etymologia
+
+   Etymologią nazwy algorytmu CRY są pierwsze 3 litery od angielskiego słowa
+   "crypt".
 
 
+2 Zastosowanie
+
+   Zastosować algorytm CRY możemy wszędzie tam, gdzie mamy do czynienia z
+   danymi binarnymi podzielonami na bajty po 8 bitów. W przypadku chęci
+   zaszyfrowania tekstu powinniśmy używać kodowania UTF-8. Algorytm CRY
+   zamienia dane binarne na dane binarne, więc w przypadku gdy chcemy wynik
+   przedstawić w formie tekstowej, zaleca się użycie kodowania transportowego
+   Base64 zgodnego z RFC4648.
 
 
+3 Zasada działania
 
+   Algorytm polega na zamienieniu danych wejściowych na kolejne różnice między
+   kolejnymi bajtami. Przedstawiony niżej sposób postępowania operuje na
+   następującym przykładzie:
 
+                               +-------+-------------+                          
+                               |   i   | 0  1  2  3  |                          
+                               | ASCII | M  r  c  c  |                          
+                               |  HEX  | 4D 72 63 63 |                          
+                               |  OUT  | 4D 25 F1 00 |                          
+                               +-------+-------------+                          
 
+   Zakładamy, że -1. bajt danych wejściowych ma wartość 0. Żeby uzyskać z -1.
+   bajtu wartość bajtu 0. musimy dodać 0x4D-0x00=0x4D, dlatego wartość 0. bajtu
+   danych wejściowych to 0x4D. To samo robimy dla uzyskania 1. bajtu danych
+   wyjściowych. 0x72-0x4D=0x25 Przy 2. bajcie równanie 0x63-0x72=-0x0F ma
+   wartość ujemną. W takim przypadku, ponieważ wartość bajtu musi mieścić się w
+   przedziale domkniętym <0, 255> tylko dla liczb całkowitych, musimy użyć
+   arytmetyki modularnej i ustalić modulo 256. Rozwiązaniem jest w przypadku
+   otrzymania liczby ujemnej dodanie wartości modula. -0x0F+0x100=0xF1 Dla
+   kolejnego bajtu: 0x63-0x63=0x00 otrzymujemy wynik mieszczący się w
+   przedziale.
 
+4 Pseudokod
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   procedura cry z argumentem binarnych danych wejściowych:
+     last = 0
+     output = <pusta tablica bajtów>
+     dla wartości każdego bajtu b w tablicy bajtów danych wejściowych:
+       nowy = b-last
+       jeżeli nowy < 0:
+         nowy = nowy + 256
+       na końcu tablicy output dopisz bajt o wartości nowy
+       last = b
 ]                                                                              [
 ]                                                                              [
 ]  Nircek                    Zayebeast Corporation                   [Page 1]  [
+]  NR4C-6rev1               Algorytm szyfrujący CRY                2018-12-10  [
+]                                                                              [
+]                                                                              [
+     zwróć output
+
+5 Przykładowa implementacja w Pythonie:
+
+   #!/usr/bin/env python3
+   # SRC: https://gist.github.com/Nircek/0433de96c5384c969cfb0536281c0188
+   def cry(input):
+     last = 0
+     output = b''
+     for b in input:
+       nowy = b-last
+       if nowy < 0:
+         nowy += 256
+       output += bytes([nowy])
+       last = b
+     return output
+   if __name__ == '__main__':
+     while True:
+       out=cry(input().encode())
+       print(out.hex(), base64.b64encode(out).decode())
+
+
+6 Przykłady
+
+                        M  r  c  c     Z  n  e  p  v  a                         
+                        4d 72 63 63 20 5a 6e 65 70 76 61                        
+                        4d 25 f1 00 bd 3a 14 f7 0b 06 eb                        
+                                TSXxAL06FPcLBus=                                
+
+ L  o  r  e  m     i  p  s  u  m     d  o  l  o  r     s  i  t     a  m  e  t   
+ 4c 6f 72 65 6d 20 69 70 73 75 6d 20 64 6f 6c 6f 72 20 73 69 74 20 61 6d 65 74  
+ 4c 23 03 f3 08 b3 49 07 03 02 f8 b3 44 0b fd 03 03 ae 53 f6 0b ac 41 0c f8 0f  
+                      TCMD8wizSQcDAvizRAv9AwOuU/YLrEEM+A8=                      
+
+
+7 Autorzy
+
+                      Nircek <nircek-2103@protonmail.com>                       
+               93F9 9DE4 C1D2 7DB2 64ED  91BD 38A9 2C1A 795C 48A2               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]                                                                              [
+]                                                                              [
+]  Nircek                    Zayebeast Corporation                   [Page 2]  [
