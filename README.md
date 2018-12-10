@@ -6,3 +6,4 @@
 - 3 NR4C-editor standard
 - 4 PseudoPHPServer
 - 5 Założenia układu ŚI
+- 6 Alforytm szyfrujący CRY
