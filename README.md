@@ -8,3 +8,4 @@
 - 5 Założenia układu ŚI
 - 6 Alforytm szyfrujący CRY
 - 7 Uniwersalna sygnatura identyfikacyjna
+- 8 SeqXOR
