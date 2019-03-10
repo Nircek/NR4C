@@ -1,0 +1,119 @@
+/%g"NR4C Cryptosystem Working Group
+/%s"Uniwersalna Sygnatura Identyfikacyjna
+/%n"7
+/%r"0 UC
+/h:
+/l"]  NR4C-%nrev%r
+/c"%s
+/r"%d  [
+/.l"]
+/r"[
+/.l"]
+/r"[
+/.e
+/f:
+/l"]
+/r"[
+/.l"]
+/r"[
+/.l"]  Nircek
+/c"%g
+/r"[Page %p]  [
+/.e
+/l"]  %g
+/r"Nircek  [
+/.l"]  Nircek's Request 4 Comments: %n
+/r"%D  [
+/.l"]  Revision: %r
+/r"[
+/.
+
+/c"%s
+/.
+
+/k"Status of this Memo
+
+/p"This document specifies a definition of the universal identifying signature (USI) for the local community and requests discussions and suggestions for improvements. Distribution of this memo is very limited.
+
+/k"Copyright Notice
+
+/pl"Copyright (c) 2019 Nircek
+/r"ALL RIGHTS RESERVED!!!
+/.
+
+/p"Ten dokument został stworzony tylko i wyłącznie dla użytku prywatnego, nie miał na celu nikogo urazić, ani zaprzeczyć jakiekolwiek globalnie ustalone prawa, zależności itp. Nie ma także nic wspólnego z oryginalnym RFC oraz z Internet Engineering Task Force. Nie należy brać tego dokumentu jako naukowo potwierdzonego. Nie pozwalam na używanie tego dokumentu w żadnej innej formie, ani gdziekolwiek indziej tam, gdzie nie wyraziłem zgody. Wszystkie prawa zastrzeżone przeze mnie, czyli przez użytkownika internetu podającego się pod pseudonimem Nircek.
+
+/p"This document was created only for private use. The purpose of this document is not to offend anyone or deny any globally determined laws, dependencies, etc. There is also nothing to do with the original RFC and Internet Engineering Task Force. Do not take this document as scientifically proven. I do not allow the use of this document in any other form or anywhere else where I have not agreed. All rights reserved by me, in other words, by the internet user under nickname Nircek.
+
+/p"Zezwalam na opublikowanie tego dokumentu w repozytorium Nircek/NR4C w serwisie GitHub.
+
+/k"Abstract
+
+/p"Ten dokument definiuje Uniwersalną Sygnature Identyfikacyjną. Została ona stworzona w celu umożliwienia półanonimowy podpis. Chodziło o to, żeby podpis był rozpoznawalny wśród "wtajemniczonych", ale żeby dla osób postronnych wyglądał tajemniczo. Jednocześnie USI umożliwia (a wręcz wymusza) sprecyzowanie okoliczności w jakich był składany podpis, zamiary składającego sygnaturę (podpisującego się) oraz dzienną datę złożenia podpisu.
+
+/k"Table od Contents
+/o
+
+/s"Budowa sygnatury
+
+/c:
+/"abc
+/."dABCg
+/."eMNOh
+/."fXYZi
+/."xyz
+/.e
+
+/p:
+/"Sygnatura składa się z następujących części:
+/a:
+/"litery główne, 9 liter na środku (ABC, MNO, XYZ)
+/"Są to 3 pierwsze litery kolejnych imion podpisującego. W przypadku posiadania mniejszej lub większej ilości imion od trzech, zakładający podpis ma pełną dowolność. W miejscu nieposiadanych imion mogą być dowolne znaki lub wymyślone imię. Tak samo w przypadku imion mających mniej niż 3 litery, należy dopisać dowolne litery. Jeżeli dana osoba ma większą ilość imion to musi się jakoś zmieścić w tych wymaganiach. Ostatecznie każda sygnatura powinna zawierać 9 głównych wielkich liter.
+/e
+
+/a:
+/"numer identyfikacyjny, 6 cyfr na górze i po lewej (abc:def)
+/"Są to cyfry, które identyfikują tego poszczególnego podpisującego. Zostały wprowadzone, żeby zwiększyć ilość możliwych podpisów, gdy pojawią się osoby o tych samych imionach. Te cyfry powinny zostać wybrane podczas zakładania podpisu i potem nie być zmieniane. Najlepiej, żeby podpisujący wiedział skąd się wzięły, jakie mają znaczenie.
+/e
+
+/a:
+/"kod funkcyjny, 3 cyfry po prawej (ghi)
+/"Są to cyfry precyzujące okoliczności złożenia podpisu oraz zamiary podpisującego. Kod funkcyjny składa się z trzech cyfr. Każda cyfra ma przypisane swoje znaczenie, które zostanie opisane w następnym rozdziale. Poszczególne cyfry można łączyć ze sobą tworząc liczby. Gdy podpisujący chce wybrać tylko jedną cyfrę, to po prostu tworzy kod składający się z trzech takich cyfr.
+/e
+
+/a:
+/"data (xyz)
+/"Tutaj podpisujący ma największą dowolność. Ważne jest to, żeby była to data dzienna, bez sprecyzowanej godziny, minuty itd. Najlepiej trzymać się jednej konwecji sposobu zapisu daty w swoich podpisach.
+/e
+/e
+
+/s"Cyfry kodu funkcyjnego
+
+/p:
+/-"0 - |sygnatura czasowa (sam fakt posiadania danego dokumentu w danym czasie)
+/-"1 - |podpis dokumentu (stwierdzenie jego autentyczności)
+/-"2 - |podpis dokumentu będąc jego autorem (stwierdzenie swojego autorstwa)
+/-"3 - |potwierdzenie podpisu (stwierdzenie autentyczności znajdujących się wcześniej podpisów)
+/-"4 - |założenie sygnatury (jedyne możliwe użycie w kodzie "444", więcej w następnym rozdziale)
+/-"5 - |bycie za (stwierdzenie swojej zgody w danej kwestii)
+/-"6 - |bycie przeciw (stwierdzenie swojego sprzeciwu w danej kwestii
+/-"7 - |sytuacja kryzysowa (np. zmuszenie do podpisu)
+/-"8 - |brak informacji (nie udzielono dodatkowych informacji do podpisu)
+/-"9 - |bez odpowiedzialności
+/e
+
+/s"Zakładanie sygnatury
+
+/p"Należy wybrać swoje litery główne oraz numer identyfikacyjny zgodne z budową sygnatury. Następnie złożyć podpis z kodem funkcyjnym "444" na dowolnym dokumencie, kartce. Po założeniu sygnatury dokument, na której została ona złożona jest dowodem założenia sygnatury. Nie należy zakładać wielu sygnatur lub zakładać ich wiele razy.
+
+/s"Używanie podpisu
+
+/p"USI obowiązuje TYLKO I WYŁĄCZNIE na fizycznych dokumentach. Musi ona być złożona ręcznie za pomocą długopisu lub pióra. Najlepiej gdy sygnatury jest sporządzona tym samym narzędziem co sam podpisywany dokument. Nie można kopiować, kserować sygnatur. Złożona sygnatura obejmuje wszystko, co zostało napisane nad nią lub po lewej stronie od niej. Najlepiej umieszczać ją bezpośrednio pod tekstem, na środku strony.
+
+/s"Autorzy
+
+/c:
+/"Nircek <nircek-2103@protonmail.com>
+/."93F9 9DE4 C1D2 7DB2 64ED  91BD 38A9 2C1A 795C 48A2
+/.
+/e
