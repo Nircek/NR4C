@@ -1,7 +1,7 @@
 /%g"NR4C Cryptosystem Working Group
 /%s"Uniwersalna Sygnatura Identyfikacyjna
 /%n"7
-/%r"0 UC
+/%r"1
 /h:
 /l"]  NR4C-%nrev%r
 /c"%s
@@ -49,7 +49,7 @@
 
 /k"Abstract
 
-/p"Ten dokument definiuje Uniwersalną Sygnature Identyfikacyjną. Została ona stworzona w celu umożliwienia półanonimowy podpis. Chodziło o to, żeby podpis był rozpoznawalny wśród "wtajemniczonych", ale żeby dla osób postronnych wyglądał tajemniczo. Jednocześnie USI umożliwia (a wręcz wymusza) sprecyzowanie okoliczności w jakich był składany podpis, zamiary składającego sygnaturę (podpisującego się) oraz dzienną datę złożenia podpisu.
+/p"Ten dokument definiuje Uniwersalną Sygnature Identyfikacyjną. Została ona stworzona w celu umożliwienia złożenia półanonimowego podpisu. Chodziło o to, żeby podpis był rozpoznawalny wśród "wtajemniczonych", ale żeby dla osób postronnych wyglądał tajemniczo. Jednocześnie USI umożliwia (a wręcz wymusza) sprecyzowanie okoliczności w jakich był składany podpis, zamiary składającego sygnaturę (podpisującego się) oraz dzienną datę złożenia podpisu.
 
 /k"Table od Contents
 /o
@@ -73,12 +73,12 @@
 
 /a:
 /"numer identyfikacyjny, 6 cyfr na górze i po lewej (abc:def)
-/"Są to cyfry, które identyfikują tego poszczególnego podpisującego. Zostały wprowadzone, żeby zwiększyć ilość możliwych podpisów, gdy pojawią się osoby o tych samych imionach. Te cyfry powinny zostać wybrane podczas zakładania podpisu i potem nie być zmieniane. Najlepiej, żeby podpisujący wiedział skąd się wzięły, jakie mają znaczenie.
+/"Są to cyfry, które identyfikują tego poszczególnego podpisującego. Zostały wprowadzone, żeby zwiększyć ilość możliwych podpisów, gdy pojawią się osoby z tymi samymi literami głównymi. Te cyfry powinny zostać wybrane podczas zakładania podpisu i potem nie być już zmieniane, tak jak litery główne. Najlepiej, żeby podpisujący wiedział skąd się wzięły, jakie mają znaczenie.
 /e
 
 /a:
 /"kod funkcyjny, 3 cyfry po prawej (ghi)
-/"Są to cyfry precyzujące okoliczności złożenia podpisu oraz zamiary podpisującego. Kod funkcyjny składa się z trzech cyfr. Każda cyfra ma przypisane swoje znaczenie, które zostanie opisane w następnym rozdziale. Poszczególne cyfry można łączyć ze sobą tworząc liczby. Gdy podpisujący chce wybrać tylko jedną cyfrę, to po prostu tworzy kod składający się z trzech takich cyfr.
+/"Są to cyfry precyzujące okoliczności złożenia podpisu oraz zamiary podpisującego. Kod funkcyjny składa się z trzech cyfr. Każda cyfra ma przypisane swoje znaczenie, które zostanie opisane w rozdziale "Cyfry kodu funkcyjnego". Poszczególne cyfry można łączyć ze sobą tworząc liczby. Gdy podpisujący chce wybrać tylko jedną lub dwie cyfry, to po prostu tworzy kod składający się z trzech takich cyfr (podwoić można ważniejszą cyfrę).
 /e
 
 /a:
@@ -90,25 +90,25 @@
 /s"Cyfry kodu funkcyjnego
 
 /p:
-/-"0 - |sygnatura czasowa (sam fakt posiadania danego dokumentu w danym czasie)
-/-"1 - |podpis dokumentu (stwierdzenie jego autentyczności)
-/-"2 - |podpis dokumentu będąc jego autorem (stwierdzenie swojego autorstwa)
-/-"3 - |potwierdzenie podpisu (stwierdzenie autentyczności znajdujących się wcześniej podpisów)
-/-"4 - |założenie sygnatury (jedyne możliwe użycie w kodzie "444", więcej w następnym rozdziale)
-/-"5 - |bycie za (stwierdzenie swojej zgody w danej kwestii)
-/-"6 - |bycie przeciw (stwierdzenie swojego sprzeciwu w danej kwestii
+/-"0 - |sygnatura czasowa; sam fakt posiadania danego dokumentu w danym czasie
+/-"1 - |podpis dokumentu; stwierdzenie jego autentyczności
+/-"2 - |podpis dokumentu będąc jego autorem; stwierdzenie swojego autorstwa
+/-"3 - |potwierdzenie podpisu; stwierdzenie autentyczności znajdujących się wcześniej podpisów
+/-"4 - |założenie sygnatury; jedyne możliwe użycie w kodzie "444", więcej w rozdziale "Zakładanie sygnatury"
+/-"5 - |bycie za; stwierdzenie swojej zgody w danej kwestii
+/-"6 - |bycie przeciw; stwierdzenie swojego sprzeciwu w danej kwesti
 /-"7 - |sytuacja kryzysowa (np. zmuszenie do podpisu)
-/-"8 - |brak informacji (nie udzielono dodatkowych informacji do podpisu)
+/-"8 - |brak informacji; nie udzielono dodatkowych informacji do podpisu
 /-"9 - |bez odpowiedzialności
 /e
 
 /s"Zakładanie sygnatury
 
-/p"Należy wybrać swoje litery główne oraz numer identyfikacyjny zgodne z budową sygnatury. Następnie złożyć podpis z kodem funkcyjnym "444" na dowolnym dokumencie, kartce. Po założeniu sygnatury dokument, na której została ona złożona jest dowodem założenia sygnatury. Nie należy zakładać wielu sygnatur lub zakładać ich wiele razy.
+/p"Należy wybrać swoje litery główne oraz numer identyfikacyjny zgodne z budową sygnatury. Następnie złożyć podpis z kodem funkcyjnym "444" na dowolnym dokumencie, kartce. Po założeniu sygnatury dokument, na której została ona złożona jest dowodem założenia sygnatury. Nie należy zakładać wielu sygnatur lub zakładać ich wiele razy. Sygnatury można używać tylko po założeniu sygnatury.
 
 /s"Używanie podpisu
 
-/p"USI obowiązuje TYLKO I WYŁĄCZNIE na fizycznych dokumentach. Musi ona być złożona ręcznie za pomocą długopisu lub pióra. Najlepiej gdy sygnatury jest sporządzona tym samym narzędziem co sam podpisywany dokument. Nie można kopiować, kserować sygnatur. Złożona sygnatura obejmuje wszystko, co zostało napisane nad nią lub po lewej stronie od niej. Najlepiej umieszczać ją bezpośrednio pod tekstem, na środku strony.
+/p"USI obowiązuje TYLKO I WYŁĄCZNIE na fizycznych dokumentach. Musi ona być złożona ręcznie za pomocą długopisu lub pióra. Najlepiej gdy sygnatura jest sporządzona tym samym narzędziem co sam podpisywany dokument. Nie można kopiować, kserować sygnatur. W przypadku kserowania/drukowania sygnatury, powinno się ją od razu przekreślić stwierdzając jej nieprawdziwość. Złożona sygnatura obejmuje wszystko, co zostało napisane nad nią lub po lewej stronie od niej. Najlepiej umieszczać ją bezpośrednio pod tekstem, na środku strony. Data znajdująca się w sygnaturze powinna być faktyczną datą składania sygnatury, NAWET jeżeli został stworzony przed tą datą.
 
 /s"Autorzy
 
