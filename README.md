@@ -9,3 +9,4 @@
 - 6 Alforytm szyfrujący CRY
 - 7 Uniwersalna sygnatura identyfikacyjna
 - 8 SeqXOR
+- 9 Resource Identifier
