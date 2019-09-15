@@ -11,3 +11,4 @@
 - 8 SeqXOR
 - 9 Resource Identifier
 - 10 MRCC time
+- 11 Zalecenia kryptograficzne
