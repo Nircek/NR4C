@@ -12,3 +12,4 @@
 - 9 Resource Identifier
 - 10 MRCC time
 - 11 Zalecenia kryptograficzne
+- 12 Procedury kończenia rozmów
